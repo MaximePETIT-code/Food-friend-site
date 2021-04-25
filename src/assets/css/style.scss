@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import "_variables.scss";
+@import "_header.scss";
+@import "_how-it-works.scss";
+@import "_footer.scss";
+@import "_contact.scss";
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: $black;
+    font-size: 1.2rem;
+    background-color: $white;
+
+    a{
+        text-decoration: none;
+    }
+
+    .title{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .subtitle{
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+    .descr{
+        line-height: 1.2;
+    }
+
+    .hover{
+        &:hover{
+            color: $green2;
+            transition: color .3s;
+        }
+    }
+
+    .link-hover{
+        position: relative;
+
+        &:before{
+            content: "";
+            position: absolute;
+            background: $green2;
+            width: 100%;
+            height: 2px;
+            bottom: -3px;
+            transform-origin: 100% 0;
+            transform: scaleX(0);
+            transition: transform .4s;
+        }
+
+        &:hover{
+            &:before{
+                transform-origin: 0 0;
+                transform: scaleX(1);
+            }
+        }
+    }
+
+    .follow{
+        margin-top: 20px;
+        .list-sn{
+            font-size: 1.3rem;
+            li{
+                display: inline-block;
+                margin-right: 10px;
+                .sn{
+                    transition: color .3s;
+                }
+            }
+        }
+    }
+
+    .intro{
+        margin-top: 100px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 2.8rem;
+    }
+
+    .page-container{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.button-contact{
+    position: relative;
+    padding: 19px 22px;
+    transition: all .2s ease;
+
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        border-radius: 28px;
+        background: $green;
+        width: 56px;
+        height: 56px;
+        transition: all .3s ease;
+    }
+
+    span{
+        position: relative;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: bold;
+        letter-spacing: .15em;
+        text-transform: uppercase;
+        vertical-align: middle;
+    }
+
+    svg{
+        position: relative;
+        top: 0;
+        margin-left: 10px;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke: $white;
+        stroke-width: 2;
+        transform: translateX(-5px);
+        transition: all .3s ease;
+    }
+
+
+    &:hover{
+        &:before{
+            width: 100%;
+            background: $green;
+        }
+
+        svg{
+            transform: translateX(0);
+        }
+    }
+
+}
+
+
+.button{
+    
+    position: relative;
+    // top: calc(50vh - 30px);
+    // left: calc(50vw - 330px);
+    cursor: pointer;
+    transition: background 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+// .button:hover{
+    
+//     background: #FFE700;
+// }
+
+// .button.magnet{
+//     border: 2px solid #FFE700;
+// }
+
+
+
+
+// .circle{
+    
+//     transform: scale(.8);
+//     transition: all .2s ease-in-out;
+// }
+
+.button-contact{
+
+    position: relative;
+    cursor: pointer;
+    transition: background 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.button-download{
+    display: flex;
+    overflow: hidden;
+    text-decoration: none;
+    background: $green;
+    border-radius: 28px;
+    width: 171px;
+
+    .text-btn{
+        margin: 0;
+        padding: 16px 25px;
+        list-style: none;
+        text-align: center;
+        position: relative;
+        backface-visibility: hidden;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 28px;
+        color: $white;
+    }
+    .arrow{
+        position: relative;
+        width: 50px;
+        height: 60px;
+        background: $green2;
+
+        &:before {
+            content: '↓';
+            font-size: 1.4rem;
+            color: $black;
+            display: block;
+            position: absolute;
+            top: 42%;
+            left: 40%;
+            margin: -9px 0 0 -1px;
+        }
+    }
+    
+    
+}

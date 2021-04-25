@@ -1,0 +1,28 @@
+footer{
+    background-color: $green-bg;
+    color: $white;
+
+    a{
+        color: $white;
+    }
+
+    .footer-contain{
+        padding: 70px 0 70px 0 ;
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+        line-height: 2.5;
+        .cr{
+            .logo{
+                width: 250px;
+            }
+
+        }
+
+        .footer-title{
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+}

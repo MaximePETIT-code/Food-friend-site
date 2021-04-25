@@ -1,0 +1,112 @@
+header{
+    background-color: $green-bg;
+    color: $white;
+    height: 100vh;
+
+    a{
+        color: $white;
+        font-weight: bold;
+    }
+
+    .header-top{
+        padding-top: 20px;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        .logo{
+            width: 150px;
+        }
+        nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            li{
+                display: inline-block;
+                padding-right: 40px;
+                &:last-child{
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+
+    .header-contain{
+        height: 85vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .info{
+            width: 30%;
+            margin-right: 100px;
+
+            .title-site{
+                font-size: 5rem;
+                font-weight: bold;
+            }
+
+            .slogan{
+                font-weight: bold;
+                font-size: 2rem;
+                margin: 10px 0 35px 0;
+                @media (max-width: 1700px){ 
+                    font-size: 1.5rem;
+                }
+
+            }
+
+            .descr-app{
+                line-height: 1.2;
+                margin-bottom: 25px;
+            }
+        }
+
+        .app-visu-img{
+            width:500px;
+
+            @media (max-height: 840px){ 
+                width: 400px;
+            }
+        }
+    }
+
+
+    .scroll{
+        font-size: 0.9rem;
+        position: absolute;
+        bottom: 3%;
+        right: 50%;
+        margin: auto;
+        .mouse{
+            width: 3px;
+            padding: 7px 13px;
+            height: 35px;
+            border: 2px solid $white;
+            border-radius: 25px;
+            opacity: 0.75;
+            box-sizing: content-box;
+
+            .scroller{
+                height: 5px;
+                width: 5px;
+                border-radius: 50%;
+                background-color: $white;
+                animation-name: scroll;
+                animation-duration: 2.2s;
+                animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+                animation-iteration-count: infinite;
+                
+            }
+            @keyframes scroll {
+                0% { opacity: 0; }
+                10% { transform: translateY(0); opacity: 1; }
+                100% { transform: translateY(15px); opacity: 0;}
+            }
+        }
+        .text-scroll{
+            margin-top: 10px;
+        }
+    }
+}

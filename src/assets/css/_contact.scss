@@ -1,0 +1,222 @@
+.back{
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+
+    .back-icn{
+        width: 25px;
+    }
+
+    .back-text{
+        margin-left: 15px;
+        color: $white;
+        font-weight: bold;
+    }
+}
+.contact-contain{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: $green-bg;
+
+    .title{
+        margin-bottom: 30px;
+    }
+}
+
+.contact-content{
+    display: flex;
+    width: 70%;
+    height: 80%;
+    margin: 0 auto;
+
+    .box{
+        width: 50%;
+        padding: 35px;
+    }
+
+    .info{
+        color: $white;
+        background-color: $green;
+        border-radius: 28px 0 0 28px;
+
+        .informations{
+            margin-top: 40px;
+            .list-informations{
+                .item-informations{
+                    margin-bottom: 20px;
+
+                    &:before{
+                        color: $green2;
+                        display: inline-block;
+                        font-style: normal;
+                        font-variant: normal;
+                        text-rendering: auto;
+                        -webkit-font-smoothing: antialiased;
+                        font-family: "Font Awesome 5 Free"; 
+                        font-weight: 900; 
+                        margin-right: 15px;
+                        vertical-align: middle;
+                    }
+                }
+
+                .adress{
+                    &:before{
+                        content: "\f3c5";
+                    }
+                }
+    
+                .mail{
+                    &:before{
+                        content: "\f0e0";
+                    }
+                }
+    
+                .phone{
+                    &:before{
+                        content: "\f879";
+                    }
+                }
+            }
+        }
+
+        .follow{
+            margin-top: 40px;
+            .list-sn{
+                margin-top: 25px;
+            }
+        }
+    }
+    
+    .formulaire-contact{
+        color: $black;
+        position: relative;
+        background-color: $white;
+        border-radius: 0 28px 28px 0;
+
+        .title{
+            color: $green;
+        }
+
+        &:before{
+            content: "";
+            position: absolute;   
+            width: 26px;  
+            height: 26px; 
+            background-color: $white;
+            transform: rotate(45deg);
+            top: 80px;
+            left: -13px;
+        }
+    }
+    
+}
+
+
+
+.conteneur-el-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    textarea{
+        margin-top: 20px;
+    }
+
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+
+    input, textarea{
+        margin-top: 15px;
+        order: 1;
+        padding: 10px;
+        padding-left: 10px;
+    }
+
+    textarea{
+        padding-top: 10px;
+    }
+
+
+}
+  
+  
+  /*
+    Pour définir une taille uniquement sur les champs text et email, on utilise l'attribut 
+  */
+
+  
+  input:invalid, textarea:invalid {
+    border: 2px solid $black;
+  }
+  
+  input:valid, textarea:valid {
+    border: 2px solid $green;
+  }
+  
+  .conteneur-el-form label,
+  .conteneur-el-form .champ-requis {
+    order: 0;
+    font-size: 1.125rem;
+    font-weight: bold;
+  }
+
+  .conteneur-el-form label.radio{
+      font-weight: normal;
+  }
+  
+  input[type="text"][required] ~ label:after,
+  input[type="email"][required] ~ label:after,
+  textarea[required] ~ label:after,
+  .champ-requis:after {
+    content: " *";
+    color: red;
+    font-weight: bold;
+  }
+
+input, textarea{
+    border-radius: 15px;
+}
+  
+  textarea{
+      resize: none;
+      height: 100px;
+  }
+
+  .titre-contact {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--violet-u-cergy);
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  
+  .liste-choix-radios {
+    display: flex;
+  }
+  
+  .liste-choix-radios li {
+    margin-right: 15px;
+  }
+  
+  .btn-soumission {
+    margin-top: 25px;
+    font-size: 1.5rem;
+    background-color: $green-bg;
+    color: $white;
+    border: none;
+    border-radius: 28px;
+    padding: 17px 65px;
+  }
+  
+  .btn-soumission-conteneur {
+    flex-direction: row;
+  }
