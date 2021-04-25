@@ -62,7 +62,7 @@ new ScrollMagic.Scene({
 
 
 var changePhone2 = new TimelineMax()
-.to(".phone-img",{attr:{src: "src/assets/images/appvisu-commandes.png"}}, 0.22)
+.to(".phone-img",{attr:{src: "assets/images/appvisu-commandes.png"}}, 0.22)
 
 new ScrollMagic.Scene({
     triggerElement: ".commande",
@@ -75,7 +75,7 @@ new ScrollMagic.Scene({
 
 var changePhone3 = new TimelineMax()
 
-.to(".phone-img",{attr:{src: "src/assets/images/appvisu-livraison.png"}})
+.to(".phone-img",{attr:{src: "assets/images/appvisu-livraison.png"}})
 
 new ScrollMagic.Scene({
     triggerElement: ".livraison",
