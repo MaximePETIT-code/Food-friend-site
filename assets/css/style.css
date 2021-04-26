@@ -170,6 +170,7 @@ header .scroll .text-scroll {
 
 .how-it-works {
   margin-top: 150px;
+  margin-bottom: 200px;
   height: 1800px;
 }
 
@@ -179,11 +180,12 @@ header .scroll .text-scroll {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-bottom: 50px;
 }
 
-.how-it-works .step .step-info {
-  width: 50%;
+.how-it-works .step .explication {
   line-height: 1.2;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,18 +193,39 @@ header .scroll .text-scroll {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.how-it-works .step .step-info .step-name {
+.how-it-works .step .explication .step-name {
   font-weight: bold;
   font-size: 1.2rem;
 }
 
-.how-it-works .step .step-info .step-title {
+.how-it-works .step .explication .step-title {
   color: #169794;
   font-weight: bold;
   font-size: 2rem;
   margin: 20px 0 35px 0;
+}
+
+.how-it-works .step .phone-container {
+  width: 300px;
+  height: 600px;
+}
+
+.how-it-works .step .phone-container .phone {
+  width: 300px;
+}
+
+.how-it-works .step .phone-container .livraison-app {
+  visibility: hidden;
+}
+
+.how-it-works .step .phone-2 {
+  -webkit-transform: translateY(553px);
+          transform: translateY(553px);
 }
 
 .how-it-works .step .phone {

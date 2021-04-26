@@ -1,16 +1,19 @@
 .how-it-works{
     margin-top: 150px;
+    margin-bottom: 200px;
     height: 1800px;
 
     .step{
         display: flex;
         justify-content: space-around;
-        .step-info{
-            width: 50%;
+        margin-bottom: 50px;
+
+        .explication{
             line-height: 1.2;
+            width: 50%;
             display: flex;
             flex-direction: column;
-
+            justify-content: center;
 
             .step-name{
                 font-weight: bold;
@@ -25,6 +28,23 @@
                 margin: 20px 0 35px 0;
             }
         }
+
+        .phone-container{
+            width: 300px;
+            height: 600px;
+
+            .phone{
+                width: 300px;
+            }
+
+            .livraison-app{
+                visibility: hidden;
+            }
+        }
+        .phone-2{
+            transform: translateY(553px);
+        }
+
 
         .phone{
             width: 300px;
