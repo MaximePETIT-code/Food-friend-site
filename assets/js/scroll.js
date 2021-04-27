@@ -7,7 +7,7 @@ var controller = new ScrollMagic.Controller();
 
 var introAnim = new TimelineMax()
 
-.fromTo(".scroll", 0.5, {opacity: 1}, {opacity: 0}, 0)
+.to(".scroll", 0.5, {opacity: 0}, 0)
 .fromTo("body", 1, {backgroundColor: "#169794"}, {backgroundColor: "#f4f8fe"}, 0)
 
 

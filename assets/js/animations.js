@@ -7,10 +7,12 @@ window.addEventListener('load', () => {
     const TL = gsap.timeline({paused: true});
 
     TL
-    // .from(logo, 0.2, {transform: "scale(0)", ease: "power2.out"}, 0.3)
-    .from(headerTop, 1.5, {opacity: 0, ease: "power2.out"}, 0.2)
-    .from(headerContain, 1.5, {translateY: '10px', opacity: 0, ease: "power2.out"}, 0.4, '-=1')
-    .from(scroll, 1, {opacity: 0, ease: "power2.out"}, 5, '-=2')
+    // .to(headerTop, 0, {opacity: 0, ease: "power2.out"}, 0)
+    .to(headerTop, 1, {opacity: 1, ease: "power2.out"}, 0)
+    .to(headerContain, 1.5, {translateY: '0px', opacity: 1, ease: "power2.out"}, 0, '-=1')
+    .to(scroll, 1, {opacity: 1, ease: "power2.out"}, 5, '-=2')
+    // .from(headerContain, 1.5, {translateY: '10px', opacity: 0, ease: "power2.out"}, 0.4, '-=1')
+    // .from(scroll, 1, {opacity: 0, ease: "power2.out"}, 5, '-=2')
 
     
     
