@@ -182,43 +182,50 @@ a{
     transition: background 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.button-download{
-    display: flex;
-    overflow: hidden;
-    text-decoration: none;
-    background: $green;
-    border-radius: 28px;
-    width: 171px;
-
-    .text-btn{
-        margin: 0;
-        padding: 16px 25px;
-        list-style: none;
-        text-align: center;
-        position: relative;
-        backface-visibility: hidden;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 28px;
-        color: $white;
+.button-container{
+    @media (max-width: 1227px){ 
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
     }
-    .arrow{
-        position: relative;
-        width: 50px;
-        height: 60px;
-        background: $green2;
-
-        &:before {
-            content: '↓';
-            font-size: 1.4rem;
-            color: $black;
-            display: block;
-            position: absolute;
-            top: 42%;
-            left: 40%;
-            margin: -9px 0 0 -1px;
+    .button-download{
+        display: flex;
+        overflow: hidden;
+        text-decoration: none;
+        background: $green;
+        border-radius: 28px;
+        width: 171px;
+    
+        .text-btn{
+            margin: 0;
+            padding: 16px 25px;
+            list-style: none;
+            text-align: center;
+            position: relative;
+            backface-visibility: hidden;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 28px;
+            color: $white;
         }
+        .arrow{
+            position: relative;
+            width: 50px;
+            height: 60px;
+            background: $green2;
+    
+            &:before {
+                content: '↓';
+                font-size: 1.4rem;
+                color: $black;
+                display: block;
+                position: absolute;
+                top: 42%;
+                left: 40%;
+                margin: -9px 0 0 -1px;
+            }
+        }
+        
+        
     }
-    
-    
 }

@@ -1,18 +1,21 @@
 const headerTop = document.querySelectorAll('.header-top');
-const headerContain = document.querySelector('.header-contain')
-const scroll = document.querySelector('.scroll')
+const headerContain = document.querySelector('.header-contain');
+const scroll = document.querySelector('.scroll');
+const back = document.querySelector('.back');
+const contact = document.querySelector('.contact-content');
 
 window.addEventListener('load', () => {
 
     const TL = gsap.timeline({paused: true});
 
     TL
-    // .to(headerTop, 0, {opacity: 0, ease: "power2.out"}, 0)
     .to(headerTop, 1, {opacity: 1, ease: "power2.out"}, 0)
     .to(headerContain, 1.5, {translateY: '0px', opacity: 1, ease: "power2.out"}, 0, '-=1')
-    .to(scroll, 1, {opacity: 1, ease: "power2.out"}, 5, '-=2')
-    // .from(headerContain, 1.5, {translateY: '10px', opacity: 0, ease: "power2.out"}, 0.4, '-=1')
-    // .from(scroll, 1, {opacity: 0, ease: "power2.out"}, 5, '-=2')
+    .to(scroll, 1, {opacity: 1, ease: "power2.out"}, 0.2, '-=2')
+
+    .to(back, 1, {opacity: 1, ease: "power2.out"}, 0)
+    .to(contact, 1.5, {opacity: 1, ease: "power2.out"}, 0, '-=1')
+    
 
     
     
@@ -20,7 +23,7 @@ window.addEventListener('load', () => {
     TL.play();
 })
 
-  
+
 // const titreSpans = document.querySelectorAll('h1 span');
 // const btns = document.querySelectorAll('.btn-first');
 // const logo = document.querySelector('.logo');
