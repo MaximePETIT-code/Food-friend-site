@@ -1,7 +1,9 @@
 .how-it-works{
-    margin-top: 150px;
-    margin-bottom: 200px;
+    margin: 100px 0 200px 0;
     height: 100%;
+    @media (max-width: 1227px){ 
+
+    }
 
     .step{
         display: flex;

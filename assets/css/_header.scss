@@ -60,7 +60,6 @@ header{
                 margin-right: 0px;
                 width: 80%;
                 margin-top: 25px;
-                font-size: 1.5rem;
             }
 
             @media (max-width: 551px){ 
@@ -73,6 +72,9 @@ header{
                 @media (max-width: 490px){ 
                     width: 100%;
                     font-size: 4rem;
+                }
+                @media (max-width: 391px){ 
+                    font-size: 3rem;
                 }
             }
 
@@ -90,6 +92,9 @@ header{
             .descr-app{
                 line-height: 1.2;
                 margin-bottom: 25px;
+                @media (max-width: 1227px){ 
+                    line-height: 1.5;
+                }
             }
         }
 

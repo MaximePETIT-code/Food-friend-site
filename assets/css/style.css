@@ -99,7 +99,6 @@ header .header-contain .info {
     margin-right: 0px;
     width: 80%;
     margin-top: 25px;
-    font-size: 1.5rem;
   }
 }
 
@@ -121,6 +120,12 @@ header .header-contain .info .title-site {
   }
 }
 
+@media (max-width: 391px) {
+  header .header-contain .info .title-site {
+    font-size: 3rem;
+  }
+}
+
 header .header-contain .info .slogan {
   font-weight: bold;
   font-size: 2rem;
@@ -136,6 +141,12 @@ header .header-contain .info .slogan {
 header .header-contain .info .descr-app {
   line-height: 1.2;
   margin-bottom: 25px;
+}
+
+@media (max-width: 1227px) {
+  header .header-contain .info .descr-app {
+    line-height: 1.5;
+  }
 }
 
 header .header-contain .app-visu-img {
@@ -232,8 +243,7 @@ header .scroll .text-scroll {
 }
 
 .how-it-works {
-  margin-top: 150px;
-  margin-bottom: 200px;
+  margin: 100px 0 200px 0;
   height: 100%;
 }
 
@@ -748,6 +758,18 @@ body .intro {
   text-align: center;
   font-weight: bold;
   font-size: 2.8rem;
+}
+
+@media (max-width: 542px) {
+  body .intro {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 396px) {
+  body .intro {
+    font-size: 1.7rem;
+  }
 }
 
 body .page-container {
