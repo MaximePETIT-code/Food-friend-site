@@ -113,6 +113,9 @@ header{
         bottom: 3%;
         right: 50%;
         margin: auto;
+        @media (max-width: 1227px){ 
+            display: none;
+        }
         .mouse{
             width: 3px;
             padding: 7px 13px;
