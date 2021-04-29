@@ -7,22 +7,53 @@ footer{
     }
 
     .footer-contain{
+        background-color: red;
         padding: 70px 0 70px 0 ;
         display: flex;
         justify-content: space-between;
         width: 80%;
         margin: 0 auto;
-        line-height: 2.5;
+        @media (max-width: 1227px){ 
+            width: 50%;
+        }
+        @media (max-width: 892px){ 
+            flex-direction: column;
+        }
         .cr{
             .logo{
                 width: 250px;
+                @media (max-width: 525px){ 
+                    width: 200px;
+                }
+                @media (max-width: 402px){ 
+                    width: 170px;
+                }
             }
 
         }
+
 
         .footer-title{
             text-transform: uppercase;
             font-weight: bold;
         }
+
+        
+        li, .footer-title, .logo{
+            margin-bottom: 25px;
+        }
+
+        .location{
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: 892px){ 
+            .cr, .info{
+                @media (max-width: 892px){ 
+                    margin-bottom: 50px;
+                }
+            }
+        }
+
     }
 }

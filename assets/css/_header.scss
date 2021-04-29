@@ -2,6 +2,12 @@ header{
     background-color: $green-bg;
     color: $white;
     height: 100vh;
+    @media (max-width: 1227px){ 
+        height: 70vh;
+    }
+    @media (max-width: 490px){ 
+        height: 85vh;
+    }
 
     a{
         color: $white;
@@ -40,6 +46,9 @@ header{
         align-items: center;
         opacity: 0;
         transform: translateY(-10px);
+        @media (max-width: 1227px){ 
+            height: 80%;
+        }
 
         .info{
             width: 30%;
@@ -50,11 +59,21 @@ header{
             @media (max-width: 1227px){ 
                 margin-right: 0px;
                 width: 80%;
+                margin-top: 25px;
+                font-size: 1.5rem;
+            }
+
+            @media (max-width: 551px){ 
+                width: 90%;
             }
 
             .title-site{
                 font-size: 5rem;
                 font-weight: bold;
+                @media (max-width: 490px){ 
+                    width: 100%;
+                    font-size: 4rem;
+                }
             }
 
             .slogan{

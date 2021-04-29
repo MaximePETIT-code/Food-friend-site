@@ -1,6 +1,11 @@
+window.onresize = function(event)
+{
+    document.location.reload(true);
+}
 
 
-var controller = new ScrollMagic.Controller();
+if (window.matchMedia("(min-width: 1227px)").matches) {
+    var controller = new ScrollMagic.Controller();
 
 
 // intro
@@ -158,3 +163,4 @@ new ScrollMagic.Scene({
 // .setTween(changePhone3)
 // .addIndicators( )
 // .addTo(controller);
+}

@@ -6,6 +6,18 @@ header {
   height: 100vh;
 }
 
+@media (max-width: 1227px) {
+  header {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 490px) {
+  header {
+    height: 85vh;
+  }
+}
+
 header a {
   color: #f4f8fe;
   font-weight: bold;
@@ -65,6 +77,12 @@ header .header-contain {
           transform: translateY(-10px);
 }
 
+@media (max-width: 1227px) {
+  header .header-contain {
+    height: 80%;
+  }
+}
+
 header .header-contain .info {
   width: 30%;
   margin-right: 100px;
@@ -80,12 +98,27 @@ header .header-contain .info {
   header .header-contain .info {
     margin-right: 0px;
     width: 80%;
+    margin-top: 25px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 551px) {
+  header .header-contain .info {
+    width: 90%;
   }
 }
 
 header .header-contain .info .title-site {
   font-size: 5rem;
   font-weight: bold;
+}
+
+@media (max-width: 490px) {
+  header .header-contain .info .title-site {
+    width: 100%;
+    font-size: 4rem;
+  }
 }
 
 header .header-contain .info .slogan {
@@ -195,7 +228,7 @@ header .scroll .text-scroll {
 .how-it-works {
   margin-top: 150px;
   margin-bottom: 200px;
-  height: 1800px;
+  height: 100%;
 }
 
 .how-it-works .step {
@@ -205,6 +238,16 @@ header .scroll .text-scroll {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-bottom: 50px;
+}
+
+@media (max-width: 1227px) {
+  .how-it-works .step {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 0px;
+  }
 }
 
 .how-it-works .step .explication {
@@ -220,6 +263,12 @@ header .scroll .text-scroll {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 1227px) {
+  .how-it-works .step .explication {
+    width: 100%;
+  }
 }
 
 .how-it-works .step .explication .step-name {
@@ -240,17 +289,56 @@ header .scroll .text-scroll {
   height: 600px;
 }
 
+@media (max-width: 1227px) {
+  .how-it-works .step .phone-container {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 70px 0 70px 0;
+  }
+}
+
 .how-it-works .step .phone-container .phone {
   width: 300px;
+}
+
+@media (max-width: 1227px) {
+  .how-it-works .step .phone-container .phone {
+    width: 300px;
+  }
 }
 
 .how-it-works .step .phone-container .livraison-app {
   visibility: hidden;
 }
 
+@media (max-width: 1227px) {
+  .how-it-works .step .phone-container .livraison-app {
+    visibility: visible;
+  }
+}
+
 .how-it-works .step .phone-2 {
   -webkit-transform: translateY(553px);
           transform: translateY(553px);
+}
+
+@media (max-width: 1227px) {
+  .how-it-works .step .phone-2 {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@media (min-width: 1227px) {
+  .how-it-works .step .phone-2 .commande-app {
+    display: none;
+  }
 }
 
 .how-it-works .step .phone {
@@ -265,16 +353,6 @@ header .scroll .text-scroll {
   margin-top: 5%;
 }
 
-.how-it-works .commande {
-  -webkit-transform: translateY(-1100px);
-          transform: translateY(-1100px);
-}
-
-.how-it-works .livraison {
-  -webkit-transform: translateY(-900px);
-          transform: translateY(-900px);
-}
-
 footer {
   background-color: #169794;
   color: #f4f8fe;
@@ -285,6 +363,7 @@ footer a {
 }
 
 footer .footer-contain {
+  background-color: red;
   padding: 70px 0 70px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -294,16 +373,56 @@ footer .footer-contain {
           justify-content: space-between;
   width: 80%;
   margin: 0 auto;
-  line-height: 2.5;
+}
+
+@media (max-width: 1227px) {
+  footer .footer-contain {
+    width: 50%;
+  }
+}
+
+@media (max-width: 892px) {
+  footer .footer-contain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 footer .footer-contain .cr .logo {
   width: 250px;
 }
 
+@media (max-width: 525px) {
+  footer .footer-contain .cr .logo {
+    width: 200px;
+  }
+}
+
+@media (max-width: 402px) {
+  footer .footer-contain .cr .logo {
+    width: 170px;
+  }
+}
+
 footer .footer-contain .footer-title {
   text-transform: uppercase;
   font-weight: bold;
+}
+
+footer .footer-contain li, footer .footer-contain .footer-title, footer .footer-contain .logo {
+  margin-bottom: 25px;
+}
+
+footer .footer-contain .location {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 892px) and (max-width: 892px) {
+  footer .footer-contain .cr, footer .footer-contain .info {
+    margin-bottom: 50px;
+  }
 }
 
 .back {
@@ -631,6 +750,12 @@ body .page-container {
   margin: 0 auto;
 }
 
+@media (max-width: 1227px) {
+  body .page-container {
+    width: 90%;
+  }
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -638,7 +763,7 @@ a {
 
 .button-contact {
   position: relative;
-  padding: 19px 22px;
+  padding: 19px 0px 19px 22px;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
 }
@@ -714,7 +839,7 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 100px;
+    margin-top: 50px;
   }
 }
 

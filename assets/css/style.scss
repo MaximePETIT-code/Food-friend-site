@@ -83,6 +83,9 @@ body{
     .page-container{
         width: 80%;
         margin: 0 auto;
+        @media (max-width: 1227px){ 
+            width: 90%;
+        }
     }
 }
 
@@ -94,7 +97,7 @@ a{
 
 .button-contact{
     position: relative;
-    padding: 19px 22px;
+    padding: 19px 0px 19px 22px;
     transition: all .2s ease;
 
     &:before{
@@ -186,7 +189,7 @@ a{
     @media (max-width: 1227px){ 
         display: flex;
         justify-content: center;
-        margin-top: 100px;
+        margin-top: 50px;
     }
     .button-download{
         display: flex;
