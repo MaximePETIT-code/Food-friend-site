@@ -52,7 +52,7 @@
             .phone{
                 width: 300px;
                 @media (max-width: 1227px){ 
-                    width: 300px;
+                    width: 100%;
                 }
             }
 
@@ -81,7 +81,7 @@
             width: 300px;
 
             .phone-img{
-                width: 300px;
+                width: 100%;
             }
         }
 

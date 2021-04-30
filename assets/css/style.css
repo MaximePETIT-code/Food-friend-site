@@ -325,7 +325,7 @@ header .scroll .text-scroll {
 
 @media (max-width: 1227px) {
   .how-it-works .step .phone-container .phone {
-    width: 300px;
+    width: 100%;
   }
 }
 
@@ -362,7 +362,7 @@ header .scroll .text-scroll {
 }
 
 .how-it-works .step .phone .phone-img {
-  width: 300px;
+  width: 100%;
 }
 
 .how-it-works .step .info-inscription {
