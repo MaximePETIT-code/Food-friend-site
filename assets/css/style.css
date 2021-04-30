@@ -357,6 +357,8 @@ header .scroll .text-scroll {
 
 .how-it-works .step .phone .phone-img {
   width: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .how-it-works .step .info-inscription {
@@ -384,7 +386,7 @@ footer .footer-contain {
   margin: 0 auto;
 }
 
-@media (max-width: 1227px) {
+@media (max-width: 892px) {
   footer .footer-contain {
     width: 50%;
   }
