@@ -323,12 +323,6 @@ header .scroll .text-scroll {
   width: 300px;
 }
 
-@media (max-width: 1227px) {
-  .how-it-works .step .phone-container .phone {
-    width: 100%;
-  }
-}
-
 .how-it-works .step .phone-container .livraison-app {
   visibility: hidden;
 }
@@ -362,7 +356,7 @@ header .scroll .text-scroll {
 }
 
 .how-it-works .step .phone .phone-img {
-  width: 100%;
+  width: 300px;
 }
 
 .how-it-works .step .info-inscription {
