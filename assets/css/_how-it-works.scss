@@ -51,6 +51,12 @@
 
             .phone{
                 width: 300px;
+    
+                .phone-img{
+                    width: 300px;
+                    height: auto;
+                    object-fit: contain;
+                }
             }
 
             .livraison-app{
@@ -74,14 +80,7 @@
         }
 
 
-        .phone{
-            width: 300px;
-
-            .phone-img{
-                width: 300px;
-                object-fit: contain;
-            }
-        }
+        
 
         .info-inscription{
             margin-top: 5%;
