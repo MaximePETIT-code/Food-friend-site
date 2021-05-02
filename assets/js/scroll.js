@@ -122,6 +122,7 @@ if (window.matchMedia("(min-width: 1227px)").matches) {
     .addIndicators()
     .addTo(controller);
 
+
     // var phoneAnim = new TimelineMax()
 
 

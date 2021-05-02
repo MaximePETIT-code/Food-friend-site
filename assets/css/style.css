@@ -341,8 +341,8 @@ header .scroll .text-scroll {
 }
 
 .how-it-works .step .phone-2 {
-  -webkit-transform: translateY(553px);
-          transform: translateY(553px);
+  -webkit-transform: translateY(575px);
+          transform: translateY(575px);
 }
 
 @media (max-width: 1227px) {
@@ -669,8 +669,13 @@ textarea {
           flex-direction: row;
 }
 
+@font-face {
+  font-family: 'GT Walsheim';
+  src: url("../fonts/gt-walsheim-regular.woff2") format("woff2"), url("../fonts/gt-walsheim-medium.woff2") format("woff2"), url("../fonts/gt-walsheim-light.woff2") format("woff2");
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'GT Walsheim', Arial, Helvetica, sans-serif;
   color: #1A1A1A;
   font-size: 1.2rem;
   background-color: #f4f8fe;
@@ -683,6 +688,11 @@ body a {
 body .title {
   font-size: 2rem;
   font-weight: bold;
+}
+
+body strong {
+  font-weight: 500;
+  font-size: 3.5rem;
 }
 
 body .subtitle {
@@ -783,7 +793,7 @@ a {
 
 .button-contact {
   position: relative;
-  padding: 19px 0px 19px 22px;
+  padding: 19px 22px;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
 }
@@ -904,5 +914,55 @@ a {
   top: 42%;
   left: 40%;
   margin: -9px 0 0 -1px;
+}
+
+.download {
+  height: 100vh;
+  background-color: #107775;
+  position: relative;
+}
+
+.download .download-contain {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.download .download-contain .download-title {
+  line-height: 1.4;
+  color: white;
+}
+
+.download .download-contain .download-card {
+  margin-top: 50px;
+}
+
+.download .download-contain .download-card .img-card {
+  width: 200px;
+}
+
+.download .download-contain .download-card .apple-card {
+  margin-left: 15px;
+  width: 180px;
+}
+
+.download .download-contain .offer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.download .download-contain .offer .offer-details {
+  width: 50vh;
+  height: 80vh;
+  background-color: #f4f8fe;
+  border-radius: 28px;
 }
 /*# sourceMappingURL=style.css.map */
