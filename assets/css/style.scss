@@ -30,7 +30,7 @@ body{
 
     strong{
         font-weight: 500;
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 
     .subtitle{
@@ -252,12 +252,12 @@ a{
     }
 }
 
-.download{
+.offer{
     height: 100vh;
     background-color: $green;
     position: relative;
 
-    .download-contain{
+    .offer-contain{
         height: 100vh;
         display: flex;
         align-items: center;
@@ -279,14 +279,81 @@ a{
             }
         }
     
-        .offer{
+        .offer-content{
             display: flex;
+            margin-left: 30px;
     
             .offer-details{
                 width: 50vh;
-                height: 80vh;
+                height: 75vh;
                 background-color: $white;
                 border-radius: 28px;
+                padding: 28px;
+
+                .clients-list{
+                    display: flex;
+                    .list{
+                        font-size: 1.45rem;
+                        position: relative;
+                        padding-right: 25px;
+                        color: $green;
+                        font-weight: bold;
+                        cursor: pointer;
+                        
+                        &:after{
+                            content: '|';
+                            position: absolute;
+                            right: 10px;
+                        }
+                        &:last-child{
+                            &:after{
+                                content: none;
+                            }
+                        }
+                        .list-hover{
+                            transition: .3s color;
+                            &:hover{
+                                transition: .3s color;
+                                color: $black;
+                            }
+                        }
+                    }
+                    #user-link{
+                        color: $black;
+                    }
+                }
+                .offer-box{
+                    #restorer, #delivery{
+                        display: none;
+                    }
+                    .box{
+                        margin-top: 50px;
+                    }
+                    .content-box{
+                        position: relative;
+                        .title-section{
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            font-size: 1.7rem;
+                            color: $green;
+                            margin-top: 50px;
+                            margin-bottom: 30px;
+                        }
+
+                        .list-section{
+                            .item-list{
+                                margin-bottom: 25px;
+                            }
+                            &:last-child{
+                                margin-bottom: 0;
+                            }
+                            .price{
+                                float: right;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

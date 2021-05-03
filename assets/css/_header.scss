@@ -99,10 +99,10 @@ header{
         }
 
         .app-visu-img{
-            width:500px;
+            width: 600px;
 
             @media (max-height: 840px){ 
-                width: 400px;
+                width: 450px;
             }
             @media (max-width: 1227px){ 
                 display: none;

@@ -150,12 +150,12 @@ header .header-contain .info .descr-app {
 }
 
 header .header-contain .app-visu-img {
-  width: 500px;
+  width: 600px;
 }
 
 @media (max-height: 840px) {
   header .header-contain .app-visu-img {
-    width: 400px;
+    width: 450px;
   }
 }
 
@@ -294,7 +294,7 @@ header .scroll .text-scroll {
 }
 
 .how-it-works .step .explication .step-title {
-  color: #169794;
+  color: #107775;
   font-weight: bold;
   font-size: 2rem;
   margin: 20px 0 35px 0;
@@ -692,7 +692,7 @@ body .title {
 
 body strong {
   font-weight: 500;
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 body .subtitle {
@@ -916,13 +916,13 @@ a {
   margin: -9px 0 0 -1px;
 }
 
-.download {
+.offer {
   height: 100vh;
   background-color: #107775;
   position: relative;
 }
 
-.download .download-contain {
+.offer .offer-contain {
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -935,34 +935,110 @@ a {
           justify-content: space-between;
 }
 
-.download .download-contain .download-title {
+.offer .offer-contain .download-title {
   line-height: 1.4;
   color: white;
 }
 
-.download .download-contain .download-card {
+.offer .offer-contain .download-card {
   margin-top: 50px;
 }
 
-.download .download-contain .download-card .img-card {
+.offer .offer-contain .download-card .img-card {
   width: 200px;
 }
 
-.download .download-contain .download-card .apple-card {
+.offer .offer-contain .download-card .apple-card {
   margin-left: 15px;
   width: 180px;
 }
 
-.download .download-contain .offer {
+.offer .offer-contain .offer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 30px;
+}
+
+.offer .offer-contain .offer-content .offer-details {
+  width: 50vh;
+  height: 75vh;
+  background-color: #f4f8fe;
+  border-radius: 28px;
+  padding: 28px;
+}
+
+.offer .offer-contain .offer-content .offer-details .clients-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.download .download-contain .offer .offer-details {
-  width: 50vh;
-  height: 80vh;
-  background-color: #f4f8fe;
-  border-radius: 28px;
+.offer .offer-contain .offer-content .offer-details .clients-list .list {
+  font-size: 1.45rem;
+  position: relative;
+  padding-right: 25px;
+  color: #107775;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.offer .offer-contain .offer-content .offer-details .clients-list .list:after {
+  content: '|';
+  position: absolute;
+  right: 10px;
+}
+
+.offer .offer-contain .offer-content .offer-details .clients-list .list:last-child:after {
+  content: none;
+}
+
+.offer .offer-contain .offer-content .offer-details .clients-list .list .list-hover {
+  -webkit-transition: .3s color;
+  transition: .3s color;
+}
+
+.offer .offer-contain .offer-content .offer-details .clients-list .list .list-hover:hover {
+  -webkit-transition: .3s color;
+  transition: .3s color;
+  color: #1A1A1A;
+}
+
+.offer .offer-contain .offer-content .offer-details .clients-list #user-link {
+  color: #1A1A1A;
+}
+
+.offer .offer-contain .offer-content .offer-details .offer-box #restorer, .offer .offer-contain .offer-content .offer-details .offer-box #delivery {
+  display: none;
+}
+
+.offer .offer-contain .offer-content .offer-details .offer-box .box {
+  margin-top: 50px;
+}
+
+.offer .offer-contain .offer-content .offer-details .offer-box .content-box {
+  position: relative;
+}
+
+.offer .offer-contain .offer-content .offer-details .offer-box .content-box .title-section {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.7rem;
+  color: #107775;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.offer .offer-contain .offer-content .offer-details .offer-box .content-box .list-section .item-list {
+  margin-bottom: 25px;
+}
+
+.offer .offer-contain .offer-content .offer-details .offer-box .content-box .list-section:last-child {
+  margin-bottom: 0;
+}
+
+.offer .offer-contain .offer-content .offer-details .offer-box .content-box .list-section .price {
+  float: right;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
