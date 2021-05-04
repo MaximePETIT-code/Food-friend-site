@@ -243,7 +243,7 @@ header .scroll .text-scroll {
 }
 
 .how-it-works {
-  margin: 100px 0 200px 0;
+  margin: 100px 0 100px 0;
   height: 100%;
 }
 
@@ -360,6 +360,101 @@ header .scroll .text-scroll {
 
 .how-it-works .step .info-inscription {
   margin-top: 5%;
+}
+
+.offer {
+  margin: 100px 0 100px 0;
+}
+
+.offer .offer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 30px;
+}
+
+.offer .offer-content .offer-details {
+  width: 50vh;
+  height: 75vh;
+  background-color: #f4f8fe;
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  border-radius: 28px;
+  padding: 28px;
+}
+
+.offer .offer-content .offer-details .clients-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.offer .offer-content .offer-details .clients-list .list {
+  font-size: 1.45rem;
+  position: relative;
+  padding-right: 25px;
+  color: #107775;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.offer .offer-content .offer-details .clients-list .list:after {
+  content: '|';
+  position: absolute;
+  right: 10px;
+}
+
+.offer .offer-content .offer-details .clients-list .list:last-child:after {
+  content: none;
+}
+
+.offer .offer-content .offer-details .clients-list .list .list-hover {
+  -webkit-transition: .3s color;
+  transition: .3s color;
+}
+
+.offer .offer-content .offer-details .clients-list .list .list-hover:hover {
+  -webkit-transition: .3s color;
+  transition: .3s color;
+  color: #1A1A1A;
+}
+
+.offer .offer-content .offer-details .clients-list #user-link {
+  color: #1A1A1A;
+}
+
+.offer .offer-content .offer-details .offer-box #restorer, .offer .offer-content .offer-details .offer-box #delivery {
+  display: none;
+}
+
+.offer .offer-content .offer-details .offer-box .box {
+  margin-top: 50px;
+}
+
+.offer .offer-content .offer-details .offer-box .content-box {
+  position: relative;
+}
+
+.offer .offer-content .offer-details .offer-box .content-box .title-section {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.7rem;
+  color: #107775;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.offer .offer-content .offer-details .offer-box .content-box .list-section .item-list {
+  margin-bottom: 25px;
+}
+
+.offer .offer-content .offer-details .offer-box .content-box .list-section:last-child {
+  margin-bottom: 0;
+}
+
+.offer .offer-content .offer-details .offer-box .content-box .list-section .price {
+  float: right;
+  font-weight: bold;
 }
 
 footer {
@@ -916,13 +1011,13 @@ a {
   margin: -9px 0 0 -1px;
 }
 
-.offer {
+.download {
   height: 100vh;
   background-color: #107775;
   position: relative;
 }
 
-.offer .offer-contain {
+.download .offer-contain {
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -935,110 +1030,21 @@ a {
           justify-content: space-between;
 }
 
-.offer .offer-contain .download-title {
+.download .offer-contain .download-title {
   line-height: 1.4;
   color: white;
 }
 
-.offer .offer-contain .download-card {
+.download .offer-contain .download-card {
   margin-top: 50px;
 }
 
-.offer .offer-contain .download-card .img-card {
+.download .offer-contain .download-card .img-card {
   width: 200px;
 }
 
-.offer .offer-contain .download-card .apple-card {
+.download .offer-contain .download-card .apple-card {
   margin-left: 15px;
   width: 180px;
-}
-
-.offer .offer-contain .offer-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 30px;
-}
-
-.offer .offer-contain .offer-content .offer-details {
-  width: 50vh;
-  height: 75vh;
-  background-color: #f4f8fe;
-  border-radius: 28px;
-  padding: 28px;
-}
-
-.offer .offer-contain .offer-content .offer-details .clients-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.offer .offer-contain .offer-content .offer-details .clients-list .list {
-  font-size: 1.45rem;
-  position: relative;
-  padding-right: 25px;
-  color: #107775;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.offer .offer-contain .offer-content .offer-details .clients-list .list:after {
-  content: '|';
-  position: absolute;
-  right: 10px;
-}
-
-.offer .offer-contain .offer-content .offer-details .clients-list .list:last-child:after {
-  content: none;
-}
-
-.offer .offer-contain .offer-content .offer-details .clients-list .list .list-hover {
-  -webkit-transition: .3s color;
-  transition: .3s color;
-}
-
-.offer .offer-contain .offer-content .offer-details .clients-list .list .list-hover:hover {
-  -webkit-transition: .3s color;
-  transition: .3s color;
-  color: #1A1A1A;
-}
-
-.offer .offer-contain .offer-content .offer-details .clients-list #user-link {
-  color: #1A1A1A;
-}
-
-.offer .offer-contain .offer-content .offer-details .offer-box #restorer, .offer .offer-contain .offer-content .offer-details .offer-box #delivery {
-  display: none;
-}
-
-.offer .offer-contain .offer-content .offer-details .offer-box .box {
-  margin-top: 50px;
-}
-
-.offer .offer-contain .offer-content .offer-details .offer-box .content-box {
-  position: relative;
-}
-
-.offer .offer-contain .offer-content .offer-details .offer-box .content-box .title-section {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 1.7rem;
-  color: #107775;
-  margin-top: 50px;
-  margin-bottom: 30px;
-}
-
-.offer .offer-contain .offer-content .offer-details .offer-box .content-box .list-section .item-list {
-  margin-bottom: 25px;
-}
-
-.offer .offer-contain .offer-content .offer-details .offer-box .content-box .list-section:last-child {
-  margin-bottom: 0;
-}
-
-.offer .offer-contain .offer-content .offer-details .offer-box .content-box .list-section .price {
-  float: right;
-  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
