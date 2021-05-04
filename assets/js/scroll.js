@@ -30,22 +30,38 @@ if (window.matchMedia("(min-width: 1227px)").matches) {
     .addTo(controller);
 
 
-    var introtextAnim = new TimelineMax()
+    $('.intro').each(function() {
+        var introtextAnim = new TimelineMax()
 
+        .to(".intro", 0.7, {translateY: "0", opacity: 1, ease: "power2.out"}, 0.2)
+        
 
-    .fromTo(".intro", 0.7, {translateY: "-35px", opacity: 0}, {translateY: "0", opacity: 1, ease: "power2.out"}, 0.2)
+        new ScrollMagic.Scene({
+            triggerElement: this,
+            triggerHook: 0.9
+        })
 
+        .setTween(introtextAnim)
+        .addIndicators()
+        .addTo(controller);
 
+        var introtextHide = new TimelineMax()
 
-    new ScrollMagic.Scene({
-        triggerElement: ".intro",
-        triggerHook: 0.9
+        .to(".intro", 0, {translateY: "-35px", opacity: 0}, 1)
+
+        new ScrollMagic.Scene({
+            triggerElement: this,
+            triggerHook: 0.9,
+            duration: 1000
+        })
+
+        .setTween(introtextHide)
+        .addIndicators()
+        .addTo(controller);
     })
 
 
-    .setTween(introtextAnim)
-    // .addIndicators()
-    .addTo(controller);
+    
 
 
 
@@ -53,7 +69,7 @@ if (window.matchMedia("(min-width: 1227px)").matches) {
 
     var controller = new ScrollMagic.Controller();
 
-    var phoneFixed = new TimelineMax()
+    var phoneFixed = new TimelineMax({onUpdate:updatePercentage})
 
     // .to(".phone", 0.5, {opacity: 0}, 5)
     // .to(".livraison-app", 0.5, {opacity: 1}, 5.2)
@@ -66,7 +82,7 @@ if (window.matchMedia("(min-width: 1227px)").matches) {
 
     .setPin(".phone")
     .setTween(phoneFixed)
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
     var phoneVisibility = new TimelineMax()
@@ -82,18 +98,18 @@ if (window.matchMedia("(min-width: 1227px)").matches) {
     // .addIndicators()
     .addTo(controller);
 
-    var phoneBase = new TimelineMax()
+    // var phoneBase = new TimelineMax()
 
-    .to(".phone", {attr:{src: "assets/images/appvisu-inscription.png"}}, 0)
+    // .to(".phone", {attr:{src: "assets/images/appvisu-inscription.png"}}, 0)
 
-    new ScrollMagic.Scene({
-        triggerElement: ".step1",
-        triggerHook: 0.3
-    })
+    // new ScrollMagic.Scene({
+    //     triggerElement: ".step1",
+    //     triggerHook: 0.3
+    // })
 
-    .setTween(phoneBase)
-    .addIndicators()
-    .addTo(controller);
+    // .setTween(phoneBase)
+    // .addIndicators()
+    // .addTo(controller);
 
     var phoneChange1 = new TimelineMax()
 
@@ -105,7 +121,7 @@ if (window.matchMedia("(min-width: 1227px)").matches) {
     })
 
     .setTween(phoneChange1)
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
     var phoneChange2 = new TimelineMax()
@@ -119,7 +135,7 @@ if (window.matchMedia("(min-width: 1227px)").matches) {
     })
 
     .setTween(phoneChange2)
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
 
@@ -167,3 +183,8 @@ if (window.matchMedia("(min-width: 1227px)").matches) {
     // .addIndicators( )
     // .addTo(controller);
     }
+
+
+function updatePercentage(){
+    phoneFixed.progress()
+}
