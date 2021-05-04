@@ -364,6 +364,15 @@ header .scroll .text-scroll {
 
 .offer {
   margin: 100px 0 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .offer .offer-content {
@@ -455,6 +464,21 @@ header .scroll .text-scroll {
 .offer .offer-content .offer-details .offer-box .content-box .list-section .price {
   float: right;
   font-weight: bold;
+}
+
+.offer .illustration {
+  width: 650px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.offer #restorer-img, .offer #delivery-img {
+  display: none;
 }
 
 footer {
@@ -1025,9 +1049,9 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .download .offer-contain .download-title {
