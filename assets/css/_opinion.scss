@@ -1,0 +1,95 @@
+#opinion{
+    // height: 100vh;
+    background-color: $green;
+    position: relative;
+
+    .card{
+        padding-top: 120px;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        .card-opinion{
+            position: relative;
+            margin-right: 50px;
+            width: 400px;
+            height: 200px;
+            background-color: $white;
+            border-radius: 18px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.30);
+            padding: 20px;
+        
+            .content-card{
+                
+                .note{
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-bottom: 20px;
+                    .round{
+                        width: 15px;
+                        height: 15px;
+                        margin-right: 10px;
+                        border-radius: 50%;
+                        background-color: $green;
+                    }
+                    .r-blank{
+                        background-color: white;
+                        width: 13px;
+                        height: 13px;
+                        border: 2px $green solid;
+                    }
+                }
+                .signature-box{
+                    position: absolute;
+                    bottom: 20px;
+
+                    .signature{
+                        font-size: 1.1rem;
+
+                    }
+                }
+            }
+
+            .opinion{
+                line-height: 1.3;
+            }
+        }
+
+        .no-margin{
+            margin-right: 0;
+        }
+    }
+
+    .download-contain{
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .download-content{
+            width: 50%;
+            .text-content{
+                color: $white;
+                line-height: 1.4;
+                .download-title{
+                    line-height: 1.4;
+                }
+                .text-download{
+                    margin-top: 15px;
+                    font-size: 1.3rem;
+                }
+            }
+        
+            .download-card{
+                margin-top: 50px;
+                .img-card{
+                    width: 200px;
+                }
+            
+                .apple-card{
+                    margin-left: 15px;
+                    width: 180px;
+                }
+            }
+        }
+    }
+}

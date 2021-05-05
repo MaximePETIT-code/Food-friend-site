@@ -386,9 +386,9 @@ header .scroll .text-scroll {
   width: 50vh;
   height: 75vh;
   background-color: #f4f8fe;
-  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-  border-radius: 28px;
+  -webkit-box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  border-radius: 18px;
   padding: 28px;
 }
 
@@ -478,6 +478,121 @@ header .scroll .text-scroll {
 
 .offer #restorer-img, .offer #delivery-img {
   display: none;
+}
+
+#opinion {
+  background-color: #107775;
+  position: relative;
+}
+
+#opinion .card {
+  padding-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+#opinion .card .card-opinion {
+  position: relative;
+  margin-right: 50px;
+  width: 400px;
+  height: 200px;
+  background-color: #f4f8fe;
+  border-radius: 18px;
+  -webkit-box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+#opinion .card .card-opinion .content-card .note {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+#opinion .card .card-opinion .content-card .note .round {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #107775;
+}
+
+#opinion .card .card-opinion .content-card .note .r-blank {
+  background-color: white;
+  width: 13px;
+  height: 13px;
+  border: 2px #107775 solid;
+}
+
+#opinion .card .card-opinion .content-card .signature-box {
+  position: absolute;
+  bottom: 20px;
+}
+
+#opinion .card .card-opinion .content-card .signature-box .signature {
+  font-size: 1.1rem;
+}
+
+#opinion .card .card-opinion .opinion {
+  line-height: 1.3;
+}
+
+#opinion .card .no-margin {
+  margin-right: 0;
+}
+
+#opinion .download-contain {
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+#opinion .download-contain .download-content {
+  width: 50%;
+}
+
+#opinion .download-contain .download-content .text-content {
+  color: #f4f8fe;
+  line-height: 1.4;
+}
+
+#opinion .download-contain .download-content .text-content .download-title {
+  line-height: 1.4;
+}
+
+#opinion .download-contain .download-content .text-content .text-download {
+  margin-top: 15px;
+  font-size: 1.3rem;
+}
+
+#opinion .download-contain .download-content .download-card {
+  margin-top: 50px;
+}
+
+#opinion .download-contain .download-content .download-card .img-card {
+  width: 200px;
+}
+
+#opinion .download-contain .download-content .download-card .apple-card {
+  margin-left: 15px;
+  width: 180px;
 }
 
 footer {
@@ -1039,42 +1154,5 @@ a {
   top: 42%;
   left: 40%;
   margin: -9px 0 0 -1px;
-}
-
-.download {
-  height: 100vh;
-  background-color: #107775;
-  position: relative;
-}
-
-.download .offer-contain {
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.download .offer-contain .download-title {
-  line-height: 1.4;
-  color: white;
-}
-
-.download .offer-contain .download-card {
-  margin-top: 50px;
-}
-
-.download .offer-contain .download-card .img-card {
-  width: 200px;
-}
-
-.download .offer-contain .download-card .apple-card {
-  margin-left: 15px;
-  width: 180px;
 }
 /*# sourceMappingURL=style.css.map */
