@@ -12,6 +12,11 @@ header{
     a{
         color: $white;
         font-weight: bold;
+        @media (max-width: 1000px){ 
+            color: $black;
+            font-size: 0.875rem;
+        }
+        
     }
 
     .header-top{
@@ -21,6 +26,10 @@ header{
         display: flex;
         justify-content: space-between;
         opacity: 0;
+        @media (max-width: 1000px){ 
+            width: 100%;
+            padding-top: 0;
+        }
         .logo{
             width: 150px;
         }
@@ -29,7 +38,26 @@ header{
             justify-content: center;
             align-items: center;
             @media (max-width: 1000px){ 
+                position: fixed;
+                bottom: -3px;
+                z-index: 3;
+                height: 70px;
+                width: 100%;
+                background-color: $white;
+                box-shadow: 0 4px 16px rgba(0,0,0,0.50);
+            }
+
+            .menu{
+                @media (max-width: 1000px){ 
+                    display: none;
+                }
+            }
+            .phone-menu{
                 display: none;
+                @media (max-width: 1000px){ 
+                    display: block;
+                    color: $white;
+                }
             }
 
             li{

@@ -23,6 +23,13 @@ header a {
   font-weight: bold;
 }
 
+@media (max-width: 1000px) {
+  header a {
+    color: #1A1A1A;
+    font-size: 0.875rem;
+  }
+}
+
 header .header-top {
   padding-top: 20px;
   width: 90%;
@@ -34,6 +41,13 @@ header .header-top {
       -ms-flex-pack: justify;
           justify-content: space-between;
   opacity: 0;
+}
+
+@media (max-width: 1000px) {
+  header .header-top {
+    width: 100%;
+    padding-top: 0;
+  }
 }
 
 header .header-top .logo {
@@ -54,7 +68,31 @@ header .header-top nav {
 
 @media (max-width: 1000px) {
   header .header-top nav {
+    position: fixed;
+    bottom: -3px;
+    z-index: 3;
+    height: 70px;
+    width: 100%;
+    background-color: #f4f8fe;
+    -webkit-box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media (max-width: 1000px) {
+  header .header-top nav .menu {
     display: none;
+  }
+}
+
+header .header-top nav .phone-menu {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  header .header-top nav .phone-menu {
+    display: block;
+    color: #f4f8fe;
   }
 }
 
@@ -1220,6 +1258,12 @@ a {
   cursor: pointer;
   -webkit-transition: background 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: background 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+@media (max-width: 1000px) {
+  .button-contact {
+    display: none;
+  }
 }
 
 @media (max-width: 1227px) {
