@@ -27,21 +27,22 @@
 
             .clients-list{
                 display: flex;
+                @media (max-width: 515px){ 
+                    overflow: auto;
+                }
                 .list{
                     font-size: 1.45rem;
                     position: relative;
-                    padding-right: 25px;
+                    margin-right: 25px;
                     color: $green;
                     font-weight: bold;
                     cursor: pointer;
-                    @media (max-width: 515px){ 
-                        
-                }
+                    
                     
                     &:after{
                         content: '|';
                         position: absolute;
-                        right: 10px;
+                        right: -15px;
                     }
                     &:last-child{
                         &:after{
@@ -88,6 +89,9 @@
                         .price{
                             float: right;
                             font-weight: bold;
+                            @media (max-width: 521px){ 
+                                float: none;
+                            }
                         }
                     }
                 }

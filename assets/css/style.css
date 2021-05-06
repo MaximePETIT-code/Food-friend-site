@@ -423,10 +423,16 @@ header .scroll .text-scroll {
   display: flex;
 }
 
+@media (max-width: 515px) {
+  .offer .offer-content .offer-details .clients-list {
+    overflow: auto;
+  }
+}
+
 .offer .offer-content .offer-details .clients-list .list {
   font-size: 1.45rem;
   position: relative;
-  padding-right: 25px;
+  margin-right: 25px;
   color: #107775;
   font-weight: bold;
   cursor: pointer;
@@ -435,7 +441,7 @@ header .scroll .text-scroll {
 .offer .offer-content .offer-details .clients-list .list:after {
   content: '|';
   position: absolute;
-  right: 10px;
+  right: -15px;
 }
 
 .offer .offer-content .offer-details .clients-list .list:last-child:after {
@@ -489,6 +495,12 @@ header .scroll .text-scroll {
 .offer .offer-content .offer-details .offer-box .content-box .list-section .price {
   float: right;
   font-weight: bold;
+}
+
+@media (max-width: 521px) {
+  .offer .offer-content .offer-details .offer-box .content-box .list-section .price {
+    float: none;
+  }
 }
 
 .offer .illustration {
@@ -603,6 +615,38 @@ header .scroll .text-scroll {
   margin-right: 0;
 }
 
+@media (max-width: 1159px) {
+  #opinion .card .slider-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #opinion .card .slider-btn .opinion-slide {
+    width: 20px;
+    height: 20px;
+    background-color: #f4f8fe;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  #opinion .card .slider-btn .opinion-slide:last-child {
+    margin-right: 0;
+  }
+  #opinion .card .slider-btn #btn-opinion-2, #opinion .card .slider-btn #btn-opinion-3 {
+    opacity: 0.25;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  #opinion .card .slider-btn #btn-opinion-2:hover, #opinion .card .slider-btn #btn-opinion-3:hover {
+    background-color: #f4f8fe;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  #opinion .card .card-opinion-3, #opinion .card .card-opinion-2 {
+    display: none;
+  }
+}
+
 #opinion .download-contain {
   padding: 125px 0 100px 0;
   display: -webkit-box;
@@ -619,6 +663,12 @@ header .scroll .text-scroll {
 
 #opinion .download-contain .download-content {
   width: 50%;
+}
+
+@media (max-width: 722px) {
+  #opinion .download-contain .download-content {
+    width: 80%;
+  }
 }
 
 #opinion .download-contain .download-content .text-content {

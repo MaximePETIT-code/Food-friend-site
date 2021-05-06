@@ -69,6 +69,42 @@
         .no-margin{
             margin-right: 0;
         }
+
+        
+
+        
+
+        @media (max-width: 1159px){ 
+            .slider-btn{
+                display: flex;
+                .opinion-slide{
+                    width: 20px;
+                    height: 20px;
+                    background-color: $white;
+                    border-radius: 50%;
+                    margin-right: 15px;
+                    cursor: pointer;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+    
+                }
+                #btn-opinion-2, #btn-opinion-3{
+                    opacity: 0.25;
+                    transition:  0.5s;
+                    &:hover{
+                        background-color: $white;
+                        transition:  0.5s;
+                    }
+                }
+            }
+
+            .card-opinion-3, .card-opinion-2{
+                display: none;
+            }
+
+        }
+        
     }
 
     .download-contain{
@@ -80,6 +116,9 @@
         text-align: center;
         .download-content{
             width: 50%;
+            @media (max-width: 722px){ 
+                width: 80%;
+        }
             .text-content{
                 color: $white;
                 line-height: 1.4;
@@ -89,6 +128,7 @@
                 .text-download{
                     margin-top: 15px;
                     font-size: 1.3rem;
+                    
                 }
             }
         

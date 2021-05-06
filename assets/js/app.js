@@ -34,9 +34,29 @@ function delivery() {
     document.getElementById("restorer-link").style.color = "#107775";
 }
 
+function opinion1(){
+    document.getElementById("opinion1").style.display = "block";
+    document.getElementById("btn-opinion-1").style.opacity = "1";
+    document.getElementById("btn-opinion-2").style.opacity = "0.25";
+    document.getElementById("btn-opinion-3").style.opacity = "0.25";
+    document.getElementById("opinion2").style.display = "none";
+    document.getElementById("opinion3").style.display = "none";
+}
 
-$('.slider').slick({
-    infinite: true,
-    slidesToShow: 2,
-    slidesToScroll: 1
-});
+function opinion2(){
+    document.getElementById("opinion2").style.display = "block";
+    document.getElementById("btn-opinion-2").style.opacity = "1";
+    document.getElementById("btn-opinion-1").style.opacity = "0.25";
+    document.getElementById("btn-opinion-3").style.opacity = "0.25";
+    document.getElementById("opinion1").style.display = "none";
+    document.getElementById("opinion3").style.display = "none";
+}
+
+function opinion3(){
+    document.getElementById("opinion3").style.display = "block";
+    document.getElementById("btn-opinion-3").style.opacity = "1";
+    document.getElementById("btn-opinion-1").style.opacity = "0.25";
+    document.getElementById("btn-opinion-2").style.opacity = "0.25";
+    document.getElementById("opinion1").style.display = "none";
+    document.getElementById("opinion2").style.display = "none";
+}
