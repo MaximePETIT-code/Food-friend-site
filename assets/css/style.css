@@ -52,6 +52,12 @@ header .header-top nav {
           align-items: center;
 }
 
+@media (max-width: 1000px) {
+  header .header-top nav {
+    display: none;
+  }
+}
+
 header .header-top nav li {
   display: inline-block;
   padding-right: 40px;
@@ -341,8 +347,8 @@ header .scroll .text-scroll {
 }
 
 .how-it-works .step .phone-2 {
-  -webkit-transform: translateY(575px);
-          transform: translateY(575px);
+  -webkit-transform: translateY(555px);
+          transform: translateY(555px);
 }
 
 @media (max-width: 1227px) {
@@ -382,14 +388,33 @@ header .scroll .text-scroll {
   margin-left: 30px;
 }
 
+@media (max-width: 1159px) {
+  .offer .offer-content {
+    margin-left: 0;
+  }
+}
+
 .offer .offer-content .offer-details {
   width: 50vh;
-  height: 75vh;
+  height: 500px;
   background-color: #f4f8fe;
   -webkit-box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
           box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
   border-radius: 18px;
   padding: 28px;
+}
+
+@media (max-width: 1659px) {
+  .offer .offer-content .offer-details {
+    width: 50vh;
+  }
+}
+
+@media (max-width: 1159px) {
+  .offer .offer-content .offer-details {
+    width: 70vw;
+    height: 550px;
+  }
 }
 
 .offer .offer-content .offer-details .clients-list {
@@ -476,6 +501,12 @@ header .scroll .text-scroll {
           align-items: center;
 }
 
+@media (max-width: 1159px) {
+  .offer .illustration {
+    display: none;
+  }
+}
+
 .offer #restorer-img, .offer #delivery-img {
   display: none;
 }
@@ -496,16 +527,38 @@ header .scroll .text-scroll {
   margin-top: 50px;
 }
 
+@media (max-width: 1159px) {
+  #opinion .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 #opinion .card .card-opinion {
   position: relative;
   margin-right: 50px;
   width: 400px;
-  height: 200px;
+  height: 230px;
+  max-width: 80vw;
   background-color: #f4f8fe;
   border-radius: 18px;
   -webkit-box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
           box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
   padding: 20px;
+}
+
+@media (max-width: 1159px) {
+  #opinion .card .card-opinion {
+    margin: 0 0 70px 0;
+  }
+  #opinion .card .card-opinion:last-child {
+    margin-bottom: 0;
+  }
 }
 
 #opinion .card .card-opinion .content-card .note {
@@ -551,7 +604,7 @@ header .scroll .text-scroll {
 }
 
 #opinion .download-contain {
-  height: 70vh;
+  padding: 125px 0 100px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -595,6 +648,12 @@ header .scroll .text-scroll {
   width: 180px;
 }
 
+@media (max-width: 1159px) {
+  #opinion .download-contain .download-content .download-card .apple-card {
+    margin: 20px 0 0 0;
+  }
+}
+
 footer {
   background-color: #169794;
   color: #f4f8fe;
@@ -616,13 +675,19 @@ footer .footer-contain {
   margin: 0 auto;
 }
 
-@media (max-width: 892px) {
+@media (max-width: 1299px) {
+  footer .footer-contain {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1094px) {
   footer .footer-contain {
     width: 50%;
   }
 }
 
-@media (max-width: 892px) {
+@media (max-width: 1094px) {
   footer .footer-contain {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -660,7 +725,7 @@ footer .footer-contain .location {
   margin-bottom: 40px;
 }
 
-@media (max-width: 892px) and (max-width: 892px) {
+@media (max-width: 1094px) {
   footer .footer-contain .cr, footer .footer-contain .info {
     margin-bottom: 50px;
   }
@@ -1012,6 +1077,12 @@ body .intro {
 @media (max-width: 396px) {
   body .intro {
     font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 1227px) {
+  body .intro {
+    opacity: 1;
   }
 }
 

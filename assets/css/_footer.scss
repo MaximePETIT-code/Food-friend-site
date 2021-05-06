@@ -12,10 +12,13 @@ footer{
         justify-content: space-between;
         width: 80%;
         margin: 0 auto;
-        @media (max-width: 892px){ 
+        @media (max-width: 1299px){ 
+            width: 90%;
+        }
+        @media (max-width: 1094px){ 
             width: 50%;
         }
-        @media (max-width: 892px){ 
+        @media (max-width: 1094px){ 
             flex-direction: column;
         }
         .cr{
@@ -46,11 +49,9 @@ footer{
             margin-bottom: 40px;
         }
 
-        @media (max-width: 892px){ 
+        @media (max-width: 1094px){ 
             .cr, .info{
-                @media (max-width: 892px){ 
-                    margin-bottom: 50px;
-                }
+                margin-bottom: 50px;
             }
         }
 

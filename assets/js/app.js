@@ -33,3 +33,10 @@ function delivery() {
     document.getElementById("restorer").style.display = "none";
     document.getElementById("restorer-link").style.color = "#107775";
 }
+
+
+$('.slider').slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1
+});

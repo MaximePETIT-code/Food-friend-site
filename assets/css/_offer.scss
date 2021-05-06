@@ -6,14 +6,24 @@
     .offer-content{
         display: flex;
         margin-left: 30px;
+        @media (max-width: 1159px){ 
+            margin-left: 0;
+        }
 
         .offer-details{
             width: 50vh;
-            height: 75vh;
+            height: 500px;
             background-color: $white;
             box-shadow: 0 4px 16px rgba(0,0,0,0.30);
             border-radius: 18px;
             padding: 28px;
+            @media (max-width: 1659px){ 
+                width: 50vh;
+            }
+            @media (max-width: 1159px){ 
+                width: 70vw;
+                height: 550px;
+            }
 
             .clients-list{
                 display: flex;
@@ -24,6 +34,9 @@
                     color: $green;
                     font-weight: bold;
                     cursor: pointer;
+                    @media (max-width: 515px){ 
+                        
+                }
                     
                     &:after{
                         content: '|';
@@ -85,6 +98,9 @@
         width: 650px;
         display: flex;
         align-items: center;
+        @media (max-width: 1159px){ 
+            display: none;
+        }
     }
 
     #restorer-img, #delivery-img{

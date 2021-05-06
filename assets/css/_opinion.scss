@@ -8,15 +8,27 @@
         display: flex;
         justify-content: center;
         margin-top: 50px;
+        @media (max-width: 1159px){ 
+                flex-direction: column;
+                align-items: center;
+        }
         .card-opinion{
             position: relative;
             margin-right: 50px;
             width: 400px;
-            height: 200px;
+            height: 230px;
+            max-width: 80vw;
             background-color: $white;
             border-radius: 18px;
             box-shadow: 0 4px 16px rgba(0,0,0,0.30);
             padding: 20px;
+            @media (max-width: 1159px){ 
+                margin: 0 0 70px 0;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+        }
+            
         
             .content-card{
                 
@@ -60,7 +72,8 @@
     }
 
     .download-contain{
-        height: 70vh;
+        // height: 70vh;
+        padding: 125px 0 100px 0;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -88,6 +101,9 @@
                 .apple-card{
                     margin-left: 15px;
                     width: 180px;
+                    @media (max-width: 1159px){ 
+                        margin: 20px 0 0 0 ;
+                }
                 }
             }
         }
