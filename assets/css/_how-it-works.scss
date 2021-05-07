@@ -1,8 +1,30 @@
-.how-it-works{
-    margin: 100px 0 100px 0;
-    height: 100%;
-    @media (max-width: 1227px){ 
+#how-it-works{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 1179px){ 
+        margin: 50px 0 70px 0;
+    }
 
+    .subsection{
+        width: 70%;
+    }   
+    
+    .app_visu{
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0!important;
+
+        .phone{
+            height: 80vh;
+        }
+    }
+
+    .step{
+        height: 700px;
     }
 
     .step{
@@ -16,7 +38,6 @@
 
         .explication{
             line-height: 1.2;
-            width: 50%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -25,68 +46,116 @@
             }
 
             .step-name{
-                color: $green-bg;
                 font-weight: bold;
                 font-size: 1.2rem;
+                color: $green-bg;
             }
 
             .step-title{
-                color: $green;
                 font-weight: bold;
                 font-size: 2rem;
                 margin: 20px 0 35px 0;
+                color: $green;
             }
-        }
-
-        .phone-container{
-            width: 300px;
-            height: 600px;
-            @media (max-width: 1227px){ 
-                height: 100%;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                margin: 70px 0 70px 0;
-            }
-
-            .phone{
-                width: 300px;
-    
-                .phone-img{
-                    width: 300px;
-                    height: auto;
-                    object-fit: contain;
-                }
-            }
-
-            .livraison-app{
-                visibility: hidden;
-                @media (max-width: 1227px){ 
-                    visibility: visible;
-                }
-            }
-        }
-        .phone-2{
-            transform: translateY(555px);
-            @media (max-width: 1227px){ 
-                transform: translateY(0px);
-            }
-
-            .commande-app{
-                @media (min-width: 1227px){ 
-                    display: none;
-                }
-            }
-        }
-
-
-        
-
-        .info-inscription{
-            margin-top: 5%;
         }
 
     }
 
     
 }
+
+
+// #how-it-works{
+//     padding-top: 15px;
+//     margin: 100px 0 100px 0;
+//     height: 100%;
+//     @media (max-width: 1179px){ 
+//         margin: 50px 0 70px 0;
+//     }
+
+//     .step{
+//         display: flex;
+//         justify-content: space-around;
+//         margin-bottom: 50px;
+//         @media (max-width: 1227px){ 
+//             flex-direction: column;
+//             margin-bottom: 0px;
+//         }
+
+//         .explication{
+//             line-height: 1.2;
+//             width: 50%;
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: center;
+//             @media (max-width: 1227px){ 
+//                 width: 100%;
+//             }
+
+//             .step-name{
+//                 color: $green-bg;
+//                 font-weight: bold;
+//                 font-size: 1.2rem;
+//             }
+
+//             .step-title{
+//                 color: $green;
+//                 font-weight: bold;
+//                 font-size: 2rem;
+//                 margin: 20px 0 35px 0;
+//             }
+//         }
+
+//         .phone-container{
+//             width: 300px;
+//             height: 600px;
+//             @media (max-width: 1227px){ 
+//                 height: 100%;
+//                 width: 100%;
+//                 display: flex;
+//                 justify-content: center;
+//                 margin: 70px 0 70px 0;
+//             }
+
+//             .phone{
+//                 width: 300px;
+    
+//                 .phone-img{
+//                     width: 300px;
+//                     height: auto;
+//                     object-fit: contain;
+//                 }
+//             }
+
+//             .livraison-app{
+//                 visibility: hidden;
+//                 @media (max-width: 1227px){ 
+//                     visibility: visible;
+//                 }
+//             }
+//         }
+//         .phone-2{
+//             transform: translateY(555px);
+//             @media (max-width: 1227px){ 
+//                 transform: translateY(0px);
+//             }
+
+//             .commande-app{
+//                 @media (min-width: 1227px){ 
+//                     display: none;
+//                 }
+//             }
+//         }
+
+
+        
+
+//         .info-inscription{
+//             margin-top: 5%;
+//         }
+
+//     }
+
+    
+// }
+

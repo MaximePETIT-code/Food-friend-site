@@ -42,7 +42,7 @@ if (window.matchMedia("(min-width: 1227px)").matches) {
         })
 
         .setTween(introtextAnim)
-        .addIndicators()
+        // .addIndicators()
         .addTo(controller);
 
         var introtextHide = new TimelineMax()
@@ -56,87 +56,123 @@ if (window.matchMedia("(min-width: 1227px)").matches) {
         })
 
         .setTween(introtextHide)
-        .addIndicators()
+        // .addIndicators()
         .addTo(controller);
     })
 
 
-    
-
-
-
-    // Phone anim
-
-    var controller = new ScrollMagic.Controller();
-
-    var phoneFixed = new TimelineMax({onUpdate:updatePercentage})
-
-    // .to(".phone", 0.5, {opacity: 0}, 5)
-    // .to(".livraison-app", 0.5, {opacity: 1}, 5.2)
-
+function splitScroll() {
+    const controller = new ScrollMagic.Controller();
     new ScrollMagic.Scene({
-        triggerElement: ".how-it-works",
-        triggerHook: 0.1,
-        duration: '1303'
-    })
-
-    .setPin(".phone")
-    .setTween(phoneFixed)
-    // .addIndicators()
-    .addTo(controller);
-
-    var phoneVisibility = new TimelineMax()
-
-    .to(".livraison-app", 0.0001, {visibility: "visible"}, 0)
-
-    new ScrollMagic.Scene({
-        triggerElement: ".phone-2",
+        duration: "220%",
+        triggerElement: ".app_visu",
         triggerHook: 0
-    })
+        })
 
-    .setTween(phoneVisibility)
-    // .addIndicators()
+    .setPin(".app_visu")
     .addTo(controller);
+}
+splitScroll();
 
-    // var phoneBase = new TimelineMax()
 
-    // .to(".phone", {attr:{src: "assets/images/appvisu-inscription.png"}}, 0)
+var phoneChange1 = new TimelineMax()
+
+.to(".phone", {attr:{src: "assets/images/appvisu-commandes.png"}}, 0)
+
+new ScrollMagic.Scene({
+    triggerElement: ".step2",
+    triggerHook: 0.3
+})
+
+.setTween(phoneChange1)
+.addIndicators()
+.addTo(controller);
+
+var phoneChange2 = new TimelineMax()
+
+.to(".phone", {attr:{src: "assets/images/appvisu-livraison.png"}}, 0)
+
+new ScrollMagic.Scene({
+    triggerElement: ".step3",
+    triggerHook: 0.3
+})
+
+.setTween(phoneChange2)
+.addIndicators()
+.addTo(controller);
+
+    // // Phone anim
+
+    // var controller = new ScrollMagic.Controller();
+
+    // var phoneFixed = new TimelineMax({onUpdate:updatePercentage})
+
+    // // .to(".phone", 0.5, {opacity: 0}, 5)
+    // // .to(".livraison-app", 0.5, {opacity: 1}, 5.2)
 
     // new ScrollMagic.Scene({
-    //     triggerElement: ".step1",
+    //     triggerElement: ".how-it-works",
+    //     triggerHook: 0.1,
+    //     duration: '1303'
+    // })
+
+    // .setPin(".phone")
+    // .setTween(phoneFixed)
+    // // .addIndicators()
+    // .addTo(controller);
+
+    // var phoneVisibility = new TimelineMax()
+
+    // .to(".livraison-app", 0.0001, {visibility: "visible"}, 0)
+
+    // new ScrollMagic.Scene({
+    //     triggerElement: ".phone-2",
+    //     triggerHook: 0
+    // })
+
+    // .setTween(phoneVisibility)
+    // // .addIndicators()
+    // .addTo(controller);
+
+    // // var phoneBase = new TimelineMax()
+
+    // // .to(".phone", {attr:{src: "assets/images/appvisu-inscription.png"}}, 0)
+
+    // // new ScrollMagic.Scene({
+    // //     triggerElement: ".step1",
+    // //     triggerHook: 0.3
+    // // })
+
+    // // .setTween(phoneBase)
+    // // .addIndicators()
+    // // .addTo(controller);
+
+    // var phoneChange1 = new TimelineMax()
+
+    // .to(".phone", {attr:{src: "assets/images/appvisu-commandes.png"}}, 0)
+
+    // new ScrollMagic.Scene({
+    //     triggerElement: ".step2",
     //     triggerHook: 0.3
     // })
 
-    // .setTween(phoneBase)
-    // .addIndicators()
+    // .setTween(phoneChange1)
+    // // .addIndicators()
     // .addTo(controller);
 
-    var phoneChange1 = new TimelineMax()
+    // var phoneChange2 = new TimelineMax()
 
-    .to(".phone", {attr:{src: "assets/images/appvisu-commandes.png"}}, 0)
-
-    new ScrollMagic.Scene({
-        triggerElement: ".step2",
-        triggerHook: 0.3
-    })
-
-    .setTween(phoneChange1)
-    // .addIndicators()
-    .addTo(controller);
-
-    var phoneChange2 = new TimelineMax()
-
-    .to(".phone", {attr:{src: "assets/images/appvisu-livraison.png"}}, 0)
+    // .to(".phone", {attr:{src: "assets/images/appvisu-livraison.png"}}, 0)
 
 
-    new ScrollMagic.Scene({
-        triggerElement: ".step3",
-        triggerHook: 0.3
-    })
+    // new ScrollMagic.Scene({
+    //     triggerElement: ".step3",
+    //     triggerHook: 0.3
+    // })
 
-    .setTween(phoneChange2)
-    // .addIndicators()
-    .addTo(controller);
+    // .setTween(phoneChange2)
+    // // .addIndicators()
+    // .addTo(controller);
 
 
     // var phoneAnim = new TimelineMax()

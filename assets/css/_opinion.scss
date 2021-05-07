@@ -116,9 +116,12 @@
         text-align: center;
         .download-content{
             width: 50%;
+            @media (max-width: 1069px){ 
+                width: 70%;
+            }
             @media (max-width: 722px){ 
                 width: 80%;
-        }
+            }
             .text-content{
                 color: $white;
                 line-height: 1.4;
