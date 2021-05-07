@@ -290,7 +290,7 @@ header .scroll .text-scroll {
 
 #how-it-works {
   padding-top: 15px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -432,7 +432,7 @@ header .scroll .text-scroll {
 
 #offer {
   padding-top: 15px;
-  margin: 100px 0 100px 0;
+  margin: 100px 0 150px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -786,6 +786,7 @@ footer {
 
 footer a {
   color: #f4f8fe;
+  white-space: nowrap;
 }
 
 footer .footer-contain {
