@@ -8,15 +8,8 @@ header {
 
 @media (max-width: 1227px) {
   header {
-    height: 100vh;
-    padding-bottom: 70px;
-  }
-}
-
-@media (max-width: 490px) {
-  header {
     height: 100%;
-    padding-bottom: 70px;
+    padding-bottom: 100px;
   }
 }
 
@@ -131,6 +124,7 @@ header .header-contain {
 
 @media (max-width: 1227px) {
   header .header-contain {
+    margin-top: 100px;
     height: 80%;
   }
 }
@@ -295,6 +289,8 @@ header .scroll .text-scroll {
 }
 
 #how-it-works {
+  padding-top: 15px;
+  padding-bottom: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -306,14 +302,45 @@ header .scroll .text-scroll {
           align-items: center;
 }
 
-@media (max-width: 1179px) {
+@media (max-width: 1227px) {
   #how-it-works {
     margin: 50px 0 70px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
 #how-it-works .subsection {
   width: 70%;
+}
+
+@media (max-width: 1227px) {
+  #how-it-works .subsection {
+    width: 100%;
+  }
+}
+
+#how-it-works .subsection .phone-mobile {
+  display: none;
+}
+
+@media (max-width: 1227px) {
+  #how-it-works .subsection .phone-mobile {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 50px;
+  }
+}
+
+#how-it-works .subsection .phone-mobile .phone {
+  width: 200px;
 }
 
 #how-it-works .app_visu {
@@ -331,12 +358,25 @@ header .scroll .text-scroll {
   margin: 0 !important;
 }
 
+@media (max-width: 1227px) {
+  #how-it-works .app_visu {
+    display: none;
+  }
+}
+
 #how-it-works .app_visu .phone {
   height: 80vh;
 }
 
 #how-it-works .step {
   height: 700px;
+}
+
+@media (max-width: 1227px) {
+  #how-it-works .step {
+    height: 100%;
+    padding-bottom: 20px;
+  }
 }
 
 #how-it-works .step {
@@ -354,7 +394,6 @@ header .scroll .text-scroll {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-bottom: 0px;
   }
 }
 

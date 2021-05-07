@@ -1,13 +1,32 @@
 #how-it-works{
+    padding-top: 15px;
+    padding-bottom: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    @media (max-width: 1179px){ 
+    @media (max-width: 1227px){ 
         margin: 50px 0 70px 0;
+        flex-direction: column;
     }
 
     .subsection{
         width: 70%;
+        @media (max-width: 1227px){ 
+            width: 100%;
+        }
+
+        .phone-mobile{
+            display: none;
+            @media (max-width: 1227px){ 
+                display: block;
+                display: flex;
+                justify-content: center;
+                margin-top: 50px;
+            }
+            .phone{
+                width: 200px;
+            }
+        }
     }   
     
     .app_visu{
@@ -17,14 +36,22 @@
         justify-content: flex-end;
         align-items: center;
         margin: 0!important;
+        @media (max-width: 1227px){ 
+            display: none;
+        }
 
         .phone{
             height: 80vh;
+            
         }
     }
 
     .step{
         height: 700px;
+        @media (max-width: 1227px){ 
+            height: 100%;
+            padding-bottom: 20px;
+        }
     }
 
     .step{
@@ -33,7 +60,6 @@
         margin-bottom: 50px;
         @media (max-width: 1227px){ 
             flex-direction: column;
-            margin-bottom: 0px;
         }
 
         .explication{
