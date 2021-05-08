@@ -630,6 +630,11 @@ header .scroll .text-scroll {
   }
 }
 
+#offer .illustration img {
+  width: 650px;
+  height: auto;
+}
+
 #offer #restorer-img, #offer #delivery-img {
   display: none;
 }
