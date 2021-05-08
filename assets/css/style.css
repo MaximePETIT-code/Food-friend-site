@@ -328,12 +328,12 @@ header .scroll .text-scroll {
   }
 }
 
-#how-it-works .subsection .phone-mobile {
+#how-it-works .subsection .phone-mobile-container {
   display: none;
 }
 
 @media (max-width: 1227px) {
-  #how-it-works .subsection .phone-mobile {
+  #how-it-works .subsection .phone-mobile-container {
     display: block;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -345,7 +345,7 @@ header .scroll .text-scroll {
   }
 }
 
-#how-it-works .subsection .phone-mobile .phone {
+#how-it-works .subsection .phone-mobile-container .phone-mobile {
   width: 200px;
   height: auto;
 }
