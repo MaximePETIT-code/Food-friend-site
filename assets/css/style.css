@@ -347,7 +347,7 @@ header .scroll .text-scroll {
 
 #how-it-works .subsection .phone-mobile-container .phone-mobile {
   width: 200px;
-  height: 50px;
+  height: 100%;
 }
 
 #how-it-works .app_visu {
