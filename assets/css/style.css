@@ -900,6 +900,22 @@ footer .footer-contain li, footer .footer-contain .footer-title, footer .footer-
   margin-bottom: 25px;
 }
 
+footer .footer-contain .link-mobile {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  footer .footer-contain .link-mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 1000px) {
+  footer .footer-contain .link-desktop {
+    display: none;
+  }
+}
+
 footer .footer-contain .location {
   margin-bottom: 40px;
 }

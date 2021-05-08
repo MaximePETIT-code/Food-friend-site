@@ -45,6 +45,19 @@ footer{
         li, .footer-title, .logo{
             margin-bottom: 25px;
         }
+        
+        .link-mobile{
+            display: none;
+            @media (max-width: 1000px){ 
+                display: block;
+            }
+        }
+
+        .link-desktop{
+            @media (max-width: 1000px){ 
+                display: none;
+            }
+        }
 
         .location{
             margin-bottom: 40px;
