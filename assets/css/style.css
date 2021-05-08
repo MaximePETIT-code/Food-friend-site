@@ -375,6 +375,12 @@ header .scroll .text-scroll {
   height: 80vh;
 }
 
+@media (max-width: 1227px) {
+  #how-it-works .app_visu .phone {
+    height: auto;
+  }
+}
+
 #how-it-works .step {
   height: 700px;
 }

@@ -43,6 +43,9 @@
 
         .phone{
             height: 80vh;
+            @media (max-width: 1227px){ 
+                height: auto;
+            }
             
         }
     }
