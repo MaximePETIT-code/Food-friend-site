@@ -41,7 +41,7 @@ header .header-top {
 @media (max-width: 1000px) {
   header .header-top {
     width: 100%;
-    padding-top: 0;
+    opacity: 1;
   }
 }
 
@@ -120,6 +120,12 @@ header .header-contain {
   opacity: 0;
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
+}
+
+@media (max-width: 1000px) {
+  header .header-contain {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 1227px) {
@@ -341,6 +347,7 @@ header .scroll .text-scroll {
 
 #how-it-works .subsection .phone-mobile .phone {
   width: 200px;
+  height: auto;
 }
 
 #how-it-works .app_visu {
@@ -574,6 +581,7 @@ header .scroll .text-scroll {
 
 #offer .illustration {
   width: 650px;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -776,6 +784,12 @@ header .scroll .text-scroll {
 @media (max-width: 1159px) {
   #opinion .download-contain .download-content .download-card .apple-card {
     margin: 20px 0 0 0;
+  }
+}
+
+@media (max-width: 634px) {
+  #opinion .download-contain .download-content .download-card .apple-card {
+    width: 200px;
   }
 }
 

@@ -4,24 +4,26 @@ const scroll = document.querySelector('.scroll');
 const back = document.querySelector('.back');
 const contact = document.querySelector('.contact-content');
 
-window.addEventListener('load', () => {
+if (window.matchMedia("(min-width: 1000px)").matches) {
+    window.addEventListener('load', () => {
 
-    const TL = gsap.timeline({paused: true});
-
-    TL
-    .to(headerTop, 1, {opacity: 1, ease: "power2.out"}, 0)
-    .to(headerContain, 1.5, {translateY: '0px', opacity: 1, ease: "power2.out"}, 0, '-=1')
-    .to(scroll, 1, {opacity: 1, ease: "power2.out"}, 0.2, '-=2')
-
-    .to(back, 1, {opacity: 1, ease: "power2.out"}, 0)
-    .to(contact, 1.5, {opacity: 1, ease: "power2.out"}, 0, '-=1')
+        const TL = gsap.timeline({paused: true});
     
-
+        TL
+        .to(headerTop, 1, {opacity: 1, ease: "power2.out"}, 0)
+        .to(headerContain, 1.5, {translateY: '0px', opacity: 1, ease: "power2.out"}, 0, '-=1')
+        .to(scroll, 1, {opacity: 1, ease: "power2.out"}, 0.2, '-=2')
     
+        .to(back, 1, {opacity: 1, ease: "power2.out"}, 0)
+        .to(contact, 1.5, {opacity: 1, ease: "power2.out"}, 0, '-=1')
+        
     
-
-    TL.play();
-})
+        
+        
+    
+        TL.play();
+    })
+}
 
 
 // const titreSpans = document.querySelectorAll('h1 span');
