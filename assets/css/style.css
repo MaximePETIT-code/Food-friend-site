@@ -471,7 +471,8 @@ header .scroll .text-scroll {
 }
 
 #offer .offer-content .offer-details {
-  width: 50vh;
+  position: relative;
+  width: 50%;
   height: 500px;
   background-color: #f4f8fe;
   -webkit-box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
@@ -497,9 +498,16 @@ header .scroll .text-scroll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 @media (max-width: 515px) {
+  #offer .offer-content .offer-details .clients-list {
+    overflow: auto;
+  }
+}
+
+@media (max-height: 686px) {
   #offer .offer-content .offer-details .clients-list {
     overflow: auto;
   }
@@ -549,6 +557,26 @@ header .scroll .text-scroll {
 
 #offer .offer-content .offer-details .offer-box .content-box {
   position: relative;
+}
+
+@media (max-height: 686px) {
+  #offer .offer-content .offer-details .offer-box .content-box:after {
+    font-size: 1rem;
+    content: 'slide';
+    position: absolute;
+    top: -30px;
+    left: 90%;
+  }
+}
+
+@media (max-width: 515px) {
+  #offer .offer-content .offer-details .offer-box .content-box:after {
+    font-size: 1rem;
+    content: 'slide';
+    position: absolute;
+    top: -30px;
+    left: 90%;
+  }
 }
 
 #offer .offer-content .offer-details .offer-box .content-box .title-section {

@@ -15,7 +15,8 @@
         }
 
         .offer-details{
-            width: 50vh;
+            position: relative;
+            width: 50%;
             height: 500px;
             background-color: $white;
             box-shadow: 0 4px 16px rgba(0,0,0,0.30);
@@ -31,7 +32,11 @@
 
             .clients-list{
                 display: flex;
+                position: relative;
                 @media (max-width: 515px){ 
+                    overflow: auto;
+                }
+                @media (max-height: 686px){ 
                     overflow: auto;
                 }
                 .list{
@@ -74,6 +79,24 @@
                 }
                 .content-box{
                     position: relative;
+                    @media (max-height: 686px){ 
+                        &:after{
+                            font-size: 1rem;
+                            content: 'slide';
+                            position: absolute;
+                            top: -30px;
+                            left: 90%;
+                        }
+                    }
+                    @media (max-width: 515px){ 
+                        &:after{
+                            font-size: 1rem;
+                            content: 'slide';
+                            position: absolute;
+                            top: -30px;
+                            left: 90%;
+                        }
+                    }
                     .title-section{
                         text-transform: uppercase;
                         font-weight: bold;
