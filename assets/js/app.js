@@ -14,11 +14,6 @@ if (window.matchMedia("(min-width: 1000px)").matches) {
         .to(headerTop, 1, {opacity: 1, ease: "power2.out"}, 0)
         .to(headerContain, 1.5, {translateY: '0px', opacity: 1, ease: "power2.out"}, 0, '-=1')
         .to(scroll, 1, {opacity: 1, ease: "power2.out"}, 0.2, '-=2')
-        
-    
-        
-        
-    
         TL.play();
     })
 }
