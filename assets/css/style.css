@@ -490,29 +490,25 @@ header .scroll .text-scroll {
   display: -ms-flexbox;
   display: flex;
   margin-left: 30px;
+  width: 50%;
 }
 
 @media (max-width: 1159px) {
   #offer .offer-content {
+    width: 100%;
     margin-left: 0;
   }
 }
 
 #offer .offer-content .offer-details {
   position: relative;
-  width: 500px;
   height: 500px;
   background-color: #f4f8fe;
   -webkit-box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
           box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
   border-radius: 18px;
   padding: 28px;
-}
-
-@media (max-width: 1659px) {
-  #offer .offer-content .offer-details {
-    width: 50vh;
-  }
+  width: 100%;
 }
 
 @media (max-width: 1159px) {
@@ -791,7 +787,7 @@ header .scroll .text-scroll {
 
 @media (max-width: 722px) {
   #opinion .download-contain .download-content {
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -802,6 +798,13 @@ header .scroll .text-scroll {
 
 #opinion .download-contain .download-content .text-content .download-title {
   line-height: 1.4;
+  font-size: 3rem;
+}
+
+@media (max-width: 383px) {
+  #opinion .download-contain .download-content .text-content .download-title {
+    font-size: 2.5rem;
+  }
 }
 
 #opinion .download-contain .download-content .text-content .text-download {

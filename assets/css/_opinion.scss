@@ -120,13 +120,17 @@
                 width: 70%;
             }
             @media (max-width: 722px){ 
-                width: 80%;
+                width: 100%;
             }
             .text-content{
                 color: $white;
                 line-height: 1.4;
                 .download-title{
                     line-height: 1.4;
+                    font-size: 3rem;
+                    @media (max-width: 383px){ 
+                        font-size: 2.5rem;;
+                    }
                 }
                 .text-download{
                     margin-top: 15px;
