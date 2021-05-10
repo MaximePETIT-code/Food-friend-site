@@ -495,7 +495,7 @@ header .scroll .text-scroll {
 
 @media (max-width: 1159px) {
   #offer .offer-content {
-    width: 100%;
+    width: auto;
     margin-left: 0;
   }
 }
@@ -1158,6 +1158,15 @@ a {
   background: #107775;
   border-radius: 28px;
   width: 171px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.button-container .button-download:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .button-container .button-download .text-btn {
@@ -1187,7 +1196,7 @@ a {
   color: #1A1A1A;
   display: block;
   position: absolute;
-  top: 42%;
+  top: 45%;
   left: 40%;
   margin: -9px 0 0 -1px;
 }
