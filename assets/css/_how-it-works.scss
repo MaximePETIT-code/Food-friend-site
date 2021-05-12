@@ -9,6 +9,7 @@
 
     .subsection{
         width: 70%;
+        // ça sera plus pratique pour vous de mettre la valeur de vos breakpoints dans des variables
         @media (max-width: 1227px){ 
             width: 100%;
         }

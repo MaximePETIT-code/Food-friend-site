@@ -19,8 +19,11 @@ if (window.matchMedia("(min-width: 1000px)").matches) {
 }
 
 if (window.matchMedia("(min-width: 1227px)").matches) {
+    // L'évènement resize est à utiliser avec extrême parcimonie
+    // Il est très couteux en ressource
     window.onresize = function(event)
     {
+        // Très mauvaise pratique accessibilité le rechargement de page. A éviter si possible
         document.location.reload(true);
     }
 
