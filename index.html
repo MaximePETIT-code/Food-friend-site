@@ -1,378 +1,460 @@
+
+<!-- 
+    Vous pouvez utiliser cette extension pour vous aider à valider l'accessibilité : 
+    https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd
+-->
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Food friend</title>
-        <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
-        <link rel="manifest" href="assets/images/favicon/site.webmanifest">
-        <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
 
-        <meta property="og:image" content="assets/images/card.jpg" />
-        <meta property="og:description" content="Application Android et iOS de livraison de nourriture écoresponsable" />
-        <meta property="og:locale" content="fr_FR" />
-        <meta property="og:title" content="Food friend" /> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food friend</title>
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:site" content="@Food-friend">
-        <meta name="twitter:creator" content="@MaximePETIT">
-        <meta name="twitter:title" content="Food friend">
-        <meta name="twitter:description" content="Application Android et iOS de livraison de nourriture écoresponsable">
-        <meta name="twitter:image" content="https://maximepetit-code.github.io/Food-friend-site/assets/images/card.jpg">
+    <meta property="og:image" content="assets/images/card.jpg" />
+    <meta property="og:description" content="Application Android et iOS de livraison de nourriture écoresponsable" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:title" content="Food friend" />
 
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-        <link href="/assets/fonts/gt-walsheim-light.woff2" rel="preload" as="font" crossorigin>
-        <link href="/assets/fonts/gt-walsheim-regular.woff2" rel="preload" as="font" crossorigin
-        ><link href="/assets/fonts/gt-walsheim-medium.woff2" rel="preload" as="font" crossorigin>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-        <link rel="stylesheet" href="assets/css/reset.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        
-    </head>
-    <body>
-        <header>
-            <div class="header-top">
-                <img src="assets/images/logo.svg" alt="Logo de Food friend" class="logo">
-                <nav>
-                    <ul class="menu">
-                        <li><a class="link-hover menu-item" href="#how-it-works">Comment ça marche ?</a></li>
-                        <li><a class="link-hover menu-item" href="#offer">Nos offres</a></li>
-                        <li><a class="link-hover menu-item" href="#opinion">Avis</a></li>
-                    </ul>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Food-friend">
+    <meta name="twitter:creator" content="@MaximePETIT">
+    <meta name="twitter:title" content="Food friend">
+    <meta name="twitter:description" content="Application Android et iOS de livraison de nourriture écoresponsable">
+    <meta name="twitter:image" content="https://maximepetit-code.github.io/Food-friend-site/assets/images/card.jpg">
 
-                    <ul class="phone-menu">
-                        <li><a class="link-hover menu-item item-operation" href="#how-it-works">Fonctionnement</a></li>
-                        <li><a class="link-hover menu-item item-offer" href="#offer">Offres</a></li>
-                        <li><a class="link-hover menu-item item-opinion" href="#opinion">Avis</a></li>
-                        <li><a class="link-hover menu-item item-contact" href="mailto:contactmaximepetit@gmail.com">Contact</a></li>
-                    </ul>
-                </nav>
-                <a href="mailto:contactmaximepetit@gmail.com" class="button-contact" data-dist="6">
-                    <span>Contact</span>
-                    <svg width="13px" height="10px" viewBox="0 0 13 10">
-                        <path d="M1,5 L11,5"></path>
-                        <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-                </a>
-            </div>
-            <div class="header-contain">
-                <div class="info">
-                    <h1 class="title-site">Food friend</h1>
-                    <h2 class="slogan">l'alimentation qui vous ressemble</h2>
-                    <p class="descr-app">Food friend est un service de livraison de plats provenant de restaurants certifiés écoresponsables. Télécharger notre application mobile (disponible sur Android et iOS) et trouvez le repas qui correspond à votre régime alimentaire.</p>
-                    <div class="button-container">
-                        <a href="#" class="button-download">
-                            <div class="text-btn">
-                                <span>Download</span>
-                            </div>
-                            <div class="arrow">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-    
-                <div class="app-visu">
-                    <img class="app-visu-img" src="assets/images/phone3.png" alt="Visuel de l'application Food Friend">
-                </div>
-            </div>
-    
-            <div class="scroll">
-                <div class="mouse">
-                    <div class="scroller"></div>
-                </div>
-                <div class="text-scroll">
-                    <span>scroll</span>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="/assets/fonts/gt-walsheim-light.woff2" rel="preload" as="font" crossorigin>
+    <link href="/assets/fonts/gt-walsheim-regular.woff2" rel="preload" as="font" crossorigin>
+    <link href="/assets/fonts/gt-walsheim-medium.woff2" rel="preload" as="font" crossorigin>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <img src="assets/images/logo.svg" alt="Logo de Food friend" class="logo">
+            <nav>
+                <ul class="menu">
+                    <li><a class="link-hover menu-item" href="#how-it-works">Comment ça marche ?</a></li>
+                    <li><a class="link-hover menu-item" href="#offer">Nos offres</a></li>
+                    <li><a class="link-hover menu-item" href="#opinion">Avis</a></li>
+                </ul>
+
+                <ul class="phone-menu">
+                    <li><a class="link-hover menu-item item-operation" href="#how-it-works">Fonctionnement</a></li>
+                    <li><a class="link-hover menu-item item-offer" href="#offer">Offres</a></li>
+                    <li><a class="link-hover menu-item item-opinion" href="#opinion">Avis</a></li>
+                    <li><a class="link-hover menu-item item-contact"
+                            href="mailto:contactmaximepetit@gmail.com">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="mailto:contactmaximepetit@gmail.com" class="button-contact" data-dist="6">
+                <span>Contact</span>
+                <svg width="13px" height="10px" viewBox="0 0 13 10">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+            </a>
+        </div>
+        <div class="header-contain">
+            <div class="info">
+                <h1 class="title-site">Food friend</h1>
+                <h2 class="slogan">l'alimentation qui vous ressemble</h2>
+                <p class="descr-app">Food friend est un service de livraison de plats provenant de restaurants certifiés
+                    écoresponsables. Télécharger notre application mobile (disponible sur Android et iOS) et trouvez le
+                    repas qui correspond à votre régime alimentaire.</p>
+                <div class="button-container">
+                    <a href="#" class="button-download">
+                        <div class="text-btn">
+                            <span>Download</span>
+                        </div>
+                        <div class="arrow">
+                        </div>
+                    </a>
                 </div>
             </div>
-        </header>
-    
-        <div class="page-container">
-            <div class="intro">
-                <h1 class="intro-text">Changez vos habitudes alimentaires avec Food friend</h1>
+
+            <div class="app-visu">
+                <img class="app-visu-img" src="assets/images/phone3.png" alt="Visuel de l'application Food Friend">
             </div>
-            <section id="how-it-works">
-                <div class="subsection">
-                    <div class="step step1">
-                        <div class="explication">
-                            <h3 class="step-name">Étape 1 : Inscription</h3>
-                            <h2 class="step-title">Inscrivez-vous <br/>et définissez votre profil</h2>
-                            <p class="step-descr">L'inscription à notre application est totalement gratuite. Lors de votre inscription, vous pouvez si vous le désirez préciser votre régime alimentaire pour que l'application vous recommande uniquement les restaurants qui vous correspondent.</p>
-                        </div>
-                        <div class="phone-mobile-container">
-                            <img src="assets/images/appvisu-inscription.png" alt="Image de l'étape d'inscription de l'application" class="phone-mobile">
-                        </div>
-                    </div>
+        </div>
 
-                    <div class="step step2">
-                        <div class="explication">
-                            <h3 class="step-name">Étape 2 : Commande</h3>
-                            <h2 class="step-title">Commandez le plat <br/>qui vous correspond</h2>
-                            <p class="step-descr">Choisissez le plat qui vous donne le plus envie préparé par le restaurant qui vous correspond. Avant de passer la commande, vous retrouverez les informations sur votre plat (valeurs nutritionnelles, description, ingrédients).</p>
-                        </div>
-                        <div class="phone-mobile-container">
-                            <img src="assets/images/appvisu-commandes.png" alt="Image de l'étape commande de l'application" class="phone-mobile">
-                        </div>
-                    </div>
+        <div class="scroll">
+            <div class="mouse">
+                <div class="scroller"></div>
+            </div>
+            <div class="text-scroll">
+                <span>scroll</span>
+            </div>
+        </div>
+    </header>
 
-                    <div class="step step3">
-                        <div class="explication">
-                            <h3 class="step-name">Étape 3 : Livraison</h3>
-                            <h2 class="step-title">Faîtes-vous livrer<br/>de manière écologique</h2>
-                            <p class="step-descr">Une fois votre commande passé, nos livreurs et le restaurant que vous avez choisi seront informé de votre commande. Vous pourrez suivre en direct le déplacement de votre livreur jusqu'à votre domicile.</p>
-                        </div>
+    <div class="page-container">
+        <div class="intro">
+            <h1 class="intro-text">Changez vos habitudes alimentaires avec Food friend</h1>
+        </div>
+        <section id="how-it-works">
+            <div class="subsection">
+                <div class="step step1">
+                    <div class="explication">
+                        <h3 class="step-name">Étape 1 : Inscription</h3>
+                        <h2 class="step-title">Inscrivez-vous <br />et définissez votre profil</h2>
+                        <p class="step-descr">L'inscription à notre application est totalement gratuite. Lors de votre
+                            inscription, vous pouvez si vous le désirez préciser votre régime alimentaire pour que
+                            l'application vous recommande uniquement les restaurants qui vous correspondent.</p>
                     </div>
                     <div class="phone-mobile-container">
-                        <img src="assets/images/appvisu-livraison.png" alt="Image de l'étape livraison de l'application" class="phone-mobile">
+                        <img src="assets/images/appvisu-inscription.png"
+                            alt="Image de l'étape d'inscription de l'application" class="phone-mobile">
                     </div>
                 </div>
-                <div class="app_visu">
-                    <img src="assets/images/appvisu-inscription.png" alt="Visuel de l'application" class="phone">
-                </div>
-            </section>
-        </div>
 
-        <div class="page-container">
-            <div class="intro">
-                <h1 class="intro-text">Vous êtes restaurateur ou futur utilisateur de notre application ? Voici nos offres !</h1>
+                <div class="step step2">
+                    <div class="explication">
+                        <h3 class="step-name">Étape 2 : Commande</h3>
+                        <h2 class="step-title">Commandez le plat <br />qui vous correspond</h2>
+                        <p class="step-descr">Choisissez le plat qui vous donne le plus envie préparé par le restaurant
+                            qui vous correspond. Avant de passer la commande, vous retrouverez les informations sur
+                            votre plat (valeurs nutritionnelles, description, ingrédients).</p>
+                    </div>
+                    <div class="phone-mobile-container">
+                        <img src="assets/images/appvisu-commandes.png" alt="Image de l'étape commande de l'application"
+                            class="phone-mobile">
+                    </div>
+                </div>
+
+                <div class="step step3">
+                    <div class="explication">
+                        <h3 class="step-name">Étape 3 : Livraison</h3>
+                        <h2 class="step-title">Faîtes-vous livrer<br />de manière écologique</h2>
+                        <p class="step-descr">Une fois votre commande passé, nos livreurs et le restaurant que vous avez
+                            choisi seront informé de votre commande. Vous pourrez suivre en direct le déplacement de
+                            votre livreur jusqu'à votre domicile.</p>
+                    </div>
+                </div>
+                <div class="phone-mobile-container">
+                    <img src="assets/images/appvisu-livraison.png" alt="Image de l'étape livraison de l'application"
+                        class="phone-mobile">
+                </div>
             </div>
-            <section id="offer">
-                <div class="offer-content">
-                    <div class="offer-details">
-                        <ul class="clients-list">
-                            <li class="list list-hover"><a id="user-link"  onclick="user()">Utilisateur</a></li>
-                            <li class="list list-hover"><a id="restorer-link" class="list-hover" onclick="restorer()">Restaurateur</a></li>
-                            <li class="list list-hover"><a id="delivery-link" class="list-hover" onclick="delivery()">Livreur</a></li>
-                        </ul>
-                        <section class="offer-box">
-                            <div id="user" class="box">
-                                <div class="content-box">
-                                    <div class="title-section">
-                                        <h3>Services</h3>
-                                    </div>
-                                    <div class="list-section">
-                                        <ul>
-                                            <li class="item-list">Commande et livraison à domicile de plats écoresponsable</li>
-                                            <li class="item-list">Personnalisation du profil selon votre régime alimentaire</li>
-                                            <li class="item-list">Notation et référencement de restaurants</li>
-                                        </ul>
-                                    </div>
-                                    <div class="title-section">
-                                        <h3>Prix</h3>
-                                    </div>
-                                    <div class="list-section">
-                                        <ul>
-                                            <li class="item-list">Inscription à l'application : <span class="price">0€</span></li>
-                                            <li class="item-list">Commande : <span class="price">Prix des plats</span></li>
-                                            <li class="item-list">Livraison : <span class="price">+2€</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <div id="restorer" class="box">
-                                <div class="content-box">
-                                    <div class="title-section">
-                                        <h3>Services</h3>
-                                    </div>
-                                    <div class="list-section">
-                                        <ul>
-                                            <li class="item-list">Visibilité sur notre application (selon votre engagement écoresponsable)</li>
-                                            <li class="item-list">Sponsorisation du restaurant sur l'application</li>
-                                        </ul>
-                                    </div>
-                                    <div class="title-section">
-                                        <h3>Prix</h3>
-                                    </div>
-                                    <div class="list-section">
-                                        <ul>
-                                            <li class="item-list">Mise en ligne du restaurant : <span class="price">59€</span></li>
-                                            <li class="item-list">Commission en pourcentage : <span class="price">10%</span></li>
-                                            <li class="item-list">Sponsorisation : <span class="price">48€ / mois</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="delivery" class="box">
-                                <div class="content-box">
-                                    <div class="title-section">
-                                        <h3>Mission</h3>
-                                    </div>
-                                    <div class="list-section">
-                                        <ul>
-                                            <li class="item-list">Livrer d'un point A à un point B</li>
-                                        </ul>
-                                    </div>
-                                    <div class="title-section">
-                                        <h3>Prérequis</h3>
-                                    </div>
-                                    <div class="list-section">
-                                        <ul>
-                                            <li class="item-list">Permis A/B</li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="title-section">
-                                        <h3>Rémunération</h3>
-                                    </div>
-                                    <div class="list-section">
-                                        <ul>
-                                            <li class="item-list">Salaire fixe (20h/semaine) : <span class="price">1800€/mois</span></li>
-                                            <li class="item-list">Salaire variable : <span class="price">2.85€/course + 0.81/km</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                    
-                </div>
-                <div class="illustration">
-                    <img id="user-img" src="assets/images/user.svg" alt="Illustration utilisateur">
-                    <img id="restorer-img" src="assets/images/restorer.svg" alt="Illustration restaurateur">
-                    <img id="delivery-img" src="assets/images/delivery.svg" alt="Illustration livreur">
-                </div>
-            </section>
-        </div>
-
-        <section id="opinion">
-            <div class="page-container">
-                <div class="card">
-                    <div id="opinion1" class="card-opinion card-opinion-1">
-                        <div class="content-card">
-                            <div class="note">
-                                <div class="round"></div>
-                                <div class="round"></div>
-                                <div class="round"></div>
-                                <div class="round"></div>
-                                <div class="round"></div>
-                            </div>
-                            <div class="opinion">
-                                <p>"L'application est vraiment très complète et correspond tout à fait à mes attentes. En effet, je n'ai plus de problèmes pour trouver quoi manger."</p>
-                            </div>
-                            <div class="signature-box">
-                                <div class="signature">
-                                    <p>David</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="opinion2" class="card-opinion card-opinion-2">
-                        <div class="content-card">
-                            <div class="note">
-                                <div class="round"></div>
-                                <div class="round"></div>
-                                <div class="round"></div>
-                                <div class="round"></div>
-                                <div class="round"></div>
-                            </div>
-                            <div class="opinion">
-                                <p>"Très simple d'utilisation et les plats sont livrés en temps et en heure. De plus, les recommandations sont super."</p>
-                            </div>
-                            <div class="signature-box">
-                                <div class="signature">
-                                    <p>Yacine</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="opinion3" class="card-opinion card-opinion-3">
-                        <div class="content-card">
-                            <div class="note">
-                                <div class="round"></div>
-                                <div class="round"></div>
-                                <div class="round"></div>
-                                <div class="round"></div>
-                                <div class="round r-blank"></div>
-                            </div>
-                            <div class="opinion">
-                                <p>"Enfin mon régime alimentaire ne pose plus aucun problème lorsque je désire me faire livrer un plat !"</p>
-                            </div>
-                            <div class="signature-box">
-                                <div class="signature">
-                                    <p>Nathan</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="slider-btn">
-                        <div id="btn-opinion-1" class="opinion-slide" onclick="opinion1()"></div>
-                        <div id="btn-opinion-2" class="opinion-slide" onclick="opinion2()"></div>
-                        <div id="btn-opinion-3" class="opinion-slide" onclick="opinion3()"></div>
-                    </div>
-                </div>
-
-                <div class="download-contain">
-                    <div class="download-content">
-                        <div class="text-content">
-                            <h2 class="download-title">
-                                Prêt à nous rejoindre ?
-                            </h2>
-                            <p class="text-download">
-                                Notre application n'attend plus que vous ! Télécharger la gratuitement et commencez à commander les plats qui vous correspondent.
-                            </p>
-                        </div>
-                        <div class="download-card">
-                            <a href="#"><img class="img-card android-card" src="assets/images/card-android.svg" alt="Bouton télécharger pour android"></a>
-                            <a href="#"><img class="img-card apple-card" src="assets/images/card-apple.svg" alt="Bouton télécharger pour iOS"></a>
-                        </div>
-                    </div>
-                </div>
+            <div class="app_visu">
+                <img src="assets/images/appvisu-inscription.png" alt="Visuel de l'application" class="phone">
             </div>
         </section>
-    
-        <footer>
-            <div class="footer-contain">
-                <div class="cr">
-                    <img src="assets/images/logo.svg" alt="Logo de Food Friend" class="logo">
-                    <div class="cr-text"><span>© Maxime PETIT. Tous droits réservés.</span></div>
+    </div>
+
+    <div class="page-container">
+        <div class="intro">
+            <h1 class="intro-text">Vous êtes restaurateur ou futur utilisateur de notre application ? Voici nos offres !
+            </h1>
+        </div>
+        <section id="offer">
+            <div class="offer-content">
+                <div class="offer-details">
+                    <ul class="clients-list">
+                        <!-- Préférer lier l'évènement dans le javascript pour la clareté du code, voir plus bas pour plus d'informations-->
+                        <li class="list list-hover"><a id="user-link" onclick="user()">Utilisateur</a></li>
+                        <li class="list list-hover"><a id="restorer-link" class="list-hover"
+                                onclick="restorer()">Restaurateur</a></li>
+                        <li class="list list-hover"><a id="delivery-link" class="list-hover"
+                                onclick="delivery()">Livreur</a></li>
+                    </ul>
+                    <section class="offer-box">
+                        <div id="user" class="box">
+                            <div class="content-box">
+                                <div class="title-section">
+                                    <h3>Services</h3>
+                                </div>
+                                <div class="list-section">
+                                    <ul>
+                                        <li class="item-list">Commande et livraison à domicile de plats écoresponsable
+                                        </li>
+                                        <li class="item-list">Personnalisation du profil selon votre régime alimentaire
+                                        </li>
+                                        <li class="item-list">Notation et référencement de restaurants</li>
+                                    </ul>
+                                </div>
+                                <div class="title-section">
+                                    <h3>Prix</h3>
+                                </div>
+                                <div class="list-section">
+                                    <ul>
+                                        <li class="item-list">Inscription à l'application : <span
+                                                class="price">0€</span></li>
+                                        <li class="item-list">Commande : <span class="price">Prix des plats</span></li>
+                                        <li class="item-list">Livraison : <span class="price">+2€</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="restorer" class="box">
+                            <div class="content-box">
+                                <div class="title-section">
+                                    <h3>Services</h3>
+                                </div>
+                                <div class="list-section">
+                                    <ul>
+                                        <li class="item-list">Visibilité sur notre application (selon votre engagement
+                                            écoresponsable)</li>
+                                        <li class="item-list">Sponsorisation du restaurant sur l'application</li>
+                                    </ul>
+                                </div>
+                                <div class="title-section">
+                                    <h3>Prix</h3>
+                                </div>
+                                <div class="list-section">
+                                    <ul>
+                                        <li class="item-list">Mise en ligne du restaurant : <span
+                                                class="price">59€</span></li>
+                                        <li class="item-list">Commission en pourcentage : <span class="price">10%</span>
+                                        </li>
+                                        <li class="item-list">Sponsorisation : <span class="price">48€ / mois</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="delivery" class="box">
+                            <div class="content-box">
+                                <div class="title-section">
+                                    <h3>Mission</h3>
+                                </div>
+                                <div class="list-section">
+                                    <ul>
+                                        <li class="item-list">Livrer d'un point A à un point B</li>
+                                    </ul>
+                                </div>
+                                <div class="title-section">
+                                    <h3>Prérequis</h3>
+                                </div>
+                                <div class="list-section">
+                                    <ul>
+                                        <li class="item-list">Permis A/B</li>
+                                    </ul>
+                                </div>
+
+                                <div class="title-section">
+                                    <h3>Rémunération</h3>
+                                </div>
+                                <div class="list-section">
+                                    <ul>
+                                        <li class="item-list">Salaire fixe (20h/semaine) : <span
+                                                class="price">1800€/mois</span></li>
+                                        <li class="item-list">Salaire variable : <span class="price">2.85€/course +
+                                                0.81/km</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-    
-                <div class="info">
-                    <div class="location">
-                        <h3 class="footer-title">Bureau</h3>
-                        <span>34 Boulevard Henri Bergson, 95200 Sarcelles</span>
-                    </div>
-    
-                    <div class="follow">
-                        <h3 class="footer-title">Nous suivre</h3>
-                        <ul class="list-sn">
-                            <li><a class="sn fab fa-facebook-f hover" href="#"></a></li>
-                            <li><a class="sn fab fa-instagram hover" href="https://www.instagram.com/xamdigital" target="_blank"></a></li>
-                            <li><a class="sn fab fa-twitter hover" href="https://twitter.com/xamdigital" target="_blank"></a></li>
-                            <li><a class="sn fab fa-linkedin hover" href="https://www.linkedin.com/in/maxime-petit-4199421b8/" target="_blank"></a></li>
-                        </ul>
+
+            </div>
+            <div class="illustration">
+                <img id="user-img" src="assets/images/user.svg" alt="Illustration utilisateur">
+                <img id="restorer-img" src="assets/images/restorer.svg" alt="Illustration restaurateur">
+                <img id="delivery-img" src="assets/images/delivery.svg" alt="Illustration livreur">
+            </div>
+        </section>
+    </div>
+
+    <section id="opinion">
+        <div class="page-container">
+            <div class="card">
+                <div id="opinion1" class="card-opinion card-opinion-1">
+                    <div class="content-card">
+                        <!-- 
+                            Ici ce que vous avez fait est bon. Mais niveau accessiblité ça ne fonctionne pas du tout.
+                            Plus d'informations : https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Role_Img
+                            Un exemple : https://codepen.io/svinkle/pen/oYjoNE (issu du lien précédent)
+                        -->
+                        <div class="note">
+                            <div class="round"></div>
+                            <div class="round"></div>
+                            <div class="round"></div>
+                            <div class="round"></div>
+                            <div class="round"></div>
+                        </div>
+                        <!-- 
+                            Question sémantique, mais je pense qu'il est préférable d'utiliser la balise <blockquote> 
+                            https://developer.mozilla.org/fr/docs/Web/HTML/Element/blockquote
+                        -->
+                        <div class="opinion">
+                            <p>"L'application est vraiment très complète et correspond tout à fait à mes attentes. En
+                                effet, je n'ai plus de problèmes pour trouver quoi manger."</p>
+                        </div>
+                        <div class="signature-box">
+                            <div class="signature">
+                                <p>David</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-    
-                <div class="nav-footer">
-                    <ul>
-                        <li><a class="link-hover link-desktop" href="#how-it-works">Comment ça marche ?</a></li>
-                        <li><a class="link-hover link-mobile" href="#how-it-works">Fonctionnement</a></li>
-                        <li><a class="link-hover" href="#opinion">Avis</a></li>
-                        <li><a class="link-hover" href="#offer">Nos offres</a></li>
-                        <li><a class="link-hover" href="mailto:contactmaximepetit@gmail.com">Contact</a></li>
+
+                <div id="opinion2" class="card-opinion card-opinion-2">
+                    <div class="content-card">
+                        <div class="note">
+                            <div class="round"></div>
+                            <div class="round"></div>
+                            <div class="round"></div>
+                            <div class="round"></div>
+                            <div class="round"></div>
+                        </div>
+                        <div class="opinion">
+                            <p>"Très simple d'utilisation et les plats sont livrés en temps et en heure. De plus, les
+                                recommandations sont super."</p>
+                        </div>
+                        <div class="signature-box">
+                            <div class="signature">
+                                <p>Yacine</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="opinion3" class="card-opinion card-opinion-3">
+                    <div class="content-card">
+                        <div class="note">
+                            <div class="round"></div>
+                            <div class="round"></div>
+                            <div class="round"></div>
+                            <div class="round"></div>
+                            <div class="round r-blank"></div>
+                        </div>
+                        <div class="opinion">
+                            <p>"Enfin mon régime alimentaire ne pose plus aucun problème lorsque je désire me faire
+                                livrer un plat !"</p>
+                        </div>
+                        <div class="signature-box">
+                            <div class="signature">
+                                <p>Nathan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="slider-btn">
+                    <!-- 
+                        Ici il faut utiliser la balise <button>, la balise <div> n'est pas faite pour ceci. 
+                        Une balise <div> ne prend pas le focus clavier par défaut, <button> et <a> oui.
+                        Par ailleurs, je vous conseille de lier votre évènement grâce à des data-attributes, c'est plus souple.
+                        Vous avez un exemple ici : "https://www.pierre-giraud.com/javascript-apprendre-coder-cours/addeventlistener-gestion-evenement/"
+                        Voir chapitre "Utiliser la méthode addEventListener() pour gérer un évènement"
+                        
+                        Admettons que vous mettez un data-attribute appelé "data-opinion". Vous aurez quelque chose comme ceci :
+                        <button class="opinion-slide" data-opinion="1"></button>
+                        Ce qui donnerait côté javascript.
+
+                        function opinion(el) {
+                            // Contenu de ma fonction
+                            // Le console.log() (équivalent du printf en C) permet d'afficher la valeur du data-attribute de l'élément sur lequel on a cliqué
+                            console.log('valeur du data-attribut "opinion"', el.currentTarget.dataset.opinion)
+                        }
+
+                        Array.from(document.querySelectorAll("[data-opinion]")).forEach((el) => {
+                            el.addEventListener('click', opinion)
+                        })
+
+                        (Vous pouvez également faire la même chose avec jQuery, ça sera plus rapide mais utiliser jQuery en 2021, ce n'est pas très pertinent même si c'est encore au programme)
+                        On fera ceci ensemble, ça sera plus simple
+                    -->
+                    <div id="btn-opinion-1" class="opinion-slide" data-opinion="1" onclick="opinion1()">btn1</div>
+                    <div id="btn-opinion-2" class="opinion-slide" data-opinion="2" onclick="opinion2()">btn2</div>
+                    <div id="btn-opinion-3" class="opinion-slide" data-opinion="3" onclick="opinion3()">btn3</div>
+                </div>
+            </div>
+
+            <div class="download-contain">
+                <div class="download-content">
+                    <div class="text-content">
+                        <h2 class="download-title">
+                            Prêt à nous rejoindre ?
+                        </h2>
+                        <p class="text-download">
+                            Notre application n'attend plus que vous ! Télécharger la gratuitement et commencez à
+                            commander les plats qui vous correspondent.
+                        </p>
+                    </div>
+                    <div class="download-card">
+                        <a href="#"><img class="img-card android-card" src="assets/images/card-android.svg"
+                                alt="Bouton télécharger pour android"></a>
+                        <a href="#"><img class="img-card apple-card" src="assets/images/card-apple.svg"
+                                alt="Bouton télécharger pour iOS"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-contain">
+            <div class="cr">
+                <img src="assets/images/logo.svg" alt="Logo de Food Friend" class="logo">
+                <div class="cr-text"><span>© Maxime PETIT. Tous droits réservés.</span></div>
+            </div>
+
+            <div class="info">
+                <div class="location">
+                    <h3 class="footer-title">Bureau</h3>
+                    <span>34 Boulevard Henri Bergson, 95200 Sarcelles</span>
+                </div>
+
+                <div class="follow">
+                    <h3 class="footer-title">Nous suivre</h3>
+                    <ul class="list-sn">
+                        <!-- Ici vos liens ne possède pas de title pour indiquer ce qu'ils font -->
+                        <li><a class="sn fab fa-facebook-f hover" href="#"></a></li>
+                        <li><a class="sn fab fa-instagram hover" href="https://www.instagram.com/xamdigital"
+                                target="_blank"></a></li>
+                        <li><a class="sn fab fa-twitter hover" href="https://twitter.com/xamdigital"
+                                target="_blank"></a></li>
+                        <li><a class="sn fab fa-linkedin hover"
+                                title="linkedin"
+                                href="https://www.linkedin.com/in/maxime-petit-4199421b8/" target="_blank"></a></li>
                     </ul>
                 </div>
             </div>
-        </footer>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js" integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg==" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js" integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg==" crossorigin="anonymous"></script>
-        <script src="assets/js/app.js"></script>
-    </body>
+            <div class="nav-footer">
+                <ul>
+                    <li><a class="link-hover link-desktop" href="#how-it-works">Comment ça marche ?</a></li>
+                    <li><a class="link-hover link-mobile" href="#how-it-works">Fonctionnement</a></li>
+                    <li><a class="link-hover" href="#opinion">Avis</a></li>
+                    <li><a class="link-hover" href="#offer">Nos offres</a></li>
+                    <!-- Attention les robots peuvent récuperer votre adresse e-mail pour constituer des bases -->
+                    <li><a class="link-hover" href="mailto:contactmaximepetit@gmail.com">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"
+        integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js"
+        integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg=="
+        crossorigin="anonymous"></script>
+    <script src="assets/js/app-2.js"></script>
+</body>
 
 </html>
