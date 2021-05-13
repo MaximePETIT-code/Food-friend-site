@@ -1,3 +1,8 @@
+
+<!-- 
+    Vous pouvez utiliser cette extension pour vous aider à valider l'accessibilité : 
+    https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd
+-->
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -161,6 +166,7 @@
             <div class="offer-content">
                 <div class="offer-details">
                     <ul class="clients-list">
+                        <!-- Préférer lier l'évènement dans le javascript pour la clareté du code, voir plus bas pour plus d'informations-->
                         <li class="list list-hover"><a id="user-link" onclick="user()">Utilisateur</a></li>
                         <li class="list list-hover"><a id="restorer-link" class="list-hover"
                                 onclick="restorer()">Restaurateur</a></li>
@@ -272,6 +278,11 @@
             <div class="card">
                 <div id="opinion1" class="card-opinion card-opinion-1">
                     <div class="content-card">
+                        <!-- 
+                            Ici ce que vous avez fait est bon. Mais niveau accessiblité ça ne fonctionne pas du tout.
+                            Plus d'informations : https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Role_Img
+                            Un exemple : https://codepen.io/svinkle/pen/oYjoNE (issu du lien précédent)
+                        -->
                         <div class="note">
                             <div class="round"></div>
                             <div class="round"></div>
@@ -341,31 +352,32 @@
 
                 <div class="slider-btn">
                     <!-- 
-                            Ici il faut utiliser la balise <button>, la balise <div> n'est pas faite pour ceci. 
-                            Une balise <div> ne prend pas le focus clavier par défaut, <button> et <a> oui.
-                            Par ailleurs, je vous conseille de lier votre évènement grâce à des data-attributes, c'est plus souple.
-                            Vous avez un exemple ici : "https://www.pierre-giraud.com/javascript-apprendre-coder-cours/addeventlistener-gestion-evenement/"
-                            Voir chapitre "Utiliser la méthode addEventListener() pour gérer un évènement"
-                            
-                            Admettons que vous mettez un data-attribute appelé "data-opinion". Vous aurez quelque chose comme ceci :
-                            <button class="opinion-slide" data-opinion="1"></button>
-                            Ce qui donnerait côté javascript.
+                        Ici il faut utiliser la balise <button>, la balise <div> n'est pas faite pour ceci. 
+                        Une balise <div> ne prend pas le focus clavier par défaut, <button> et <a> oui.
+                        Par ailleurs, je vous conseille de lier votre évènement grâce à des data-attributes, c'est plus souple.
+                        Vous avez un exemple ici : "https://www.pierre-giraud.com/javascript-apprendre-coder-cours/addeventlistener-gestion-evenement/"
+                        Voir chapitre "Utiliser la méthode addEventListener() pour gérer un évènement"
+                        
+                        Admettons que vous mettez un data-attribute appelé "data-opinion". Vous aurez quelque chose comme ceci :
+                        <button class="opinion-slide" data-opinion="1"></button>
+                        Ce qui donnerait côté javascript.
 
-                            function opinion(el) {
-                                // Contenu de ma fonction
-                                // Le console.log() (équivalent du printf en C) permet d'afficher la valeur du data-attribute de l'élément sur lequel on a cliqué
-                                console.log('valeur du data-attribut "opinion"', el.currentTarget.dataset.opinion)
-                            }
+                        function opinion(el) {
+                            // Contenu de ma fonction
+                            // Le console.log() (équivalent du printf en C) permet d'afficher la valeur du data-attribute de l'élément sur lequel on a cliqué
+                            console.log('valeur du data-attribut "opinion"', el.currentTarget.dataset.opinion)
+                        }
 
-                            Array.from(document.querySelectorAll("[data-opinion]")).forEach((el) => {
-                                el.addEventListener('click', opinion)
-                            })
+                        Array.from(document.querySelectorAll("[data-opinion]")).forEach((el) => {
+                            el.addEventListener('click', opinion)
+                        })
 
-                            (Vous pouvez également faire la même chose avec jQuery, ça sera plus rapide mais utiliser jQuery en 2021, ce n'est pas très pertinent)
-                        -->
-                    <div id="btn-opinion-1" class="opinion-slide" onclick="opinion1()"></div>
-                    <div id="btn-opinion-2" class="opinion-slide" onclick="opinion2()"></div>
-                    <div id="btn-opinion-3" class="opinion-slide" onclick="opinion3()"></div>
+                        (Vous pouvez également faire la même chose avec jQuery, ça sera plus rapide mais utiliser jQuery en 2021, ce n'est pas très pertinent même si c'est encore au programme)
+                        On fera ceci ensemble, ça sera plus simple
+                    -->
+                    <div id="btn-opinion-1" class="opinion-slide" data-opinion="1" onclick="opinion1()">btn1</div>
+                    <div id="btn-opinion-2" class="opinion-slide" data-opinion="2" onclick="opinion2()">btn2</div>
+                    <div id="btn-opinion-3" class="opinion-slide" data-opinion="3" onclick="opinion3()">btn3</div>
                 </div>
             </div>
 
@@ -407,12 +419,14 @@
                 <div class="follow">
                     <h3 class="footer-title">Nous suivre</h3>
                     <ul class="list-sn">
+                        <!-- Ici vos liens ne possède pas de title pour indiquer ce qu'ils font -->
                         <li><a class="sn fab fa-facebook-f hover" href="#"></a></li>
                         <li><a class="sn fab fa-instagram hover" href="https://www.instagram.com/xamdigital"
                                 target="_blank"></a></li>
                         <li><a class="sn fab fa-twitter hover" href="https://twitter.com/xamdigital"
                                 target="_blank"></a></li>
                         <li><a class="sn fab fa-linkedin hover"
+                                title="linkedin"
                                 href="https://www.linkedin.com/in/maxime-petit-4199421b8/" target="_blank"></a></li>
                     </ul>
                 </div>
@@ -424,6 +438,7 @@
                     <li><a class="link-hover link-mobile" href="#how-it-works">Fonctionnement</a></li>
                     <li><a class="link-hover" href="#opinion">Avis</a></li>
                     <li><a class="link-hover" href="#offer">Nos offres</a></li>
+                    <!-- Attention les robots peuvent récuperer votre adresse e-mail pour constituer des bases -->
                     <li><a class="link-hover" href="mailto:contactmaximepetit@gmail.com">Contact</a></li>
                 </ul>
             </div>
@@ -439,7 +454,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js"
         integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg=="
         crossorigin="anonymous"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/app-2.js"></script>
 </body>
 
 </html>

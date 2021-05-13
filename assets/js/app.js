@@ -1,3 +1,5 @@
+// Votre fichier est un peu long, notamment à cause de nombreuses fonctions dupliquées
+// Il est possible de séparer votre fichiers en plusieurs parties comme le CSS, et comme le CSS, l'ordre d'importation des fichiers compte
 const headerTop = document.querySelectorAll('.header-top');
 const headerContain = document.querySelector('.header-contain');
 const scroll = document.querySelector('.scroll');
@@ -23,10 +25,15 @@ if (window.matchMedia("(min-width: 1227px)").matches) {
     // Il est très couteux en ressource
     window.onresize = function(event)
     {
-        // Très mauvaise pratique accessibilité le rechargement de page. A éviter si possible
+        // Très mauvaise pratique accessibilité le rechargement de page. A éviter.
         document.location.reload(true);
     }
 
+    // le mot-clé "var", il ne faut plus l'utiliser de nos jours. Il faut utiliser :
+    // - const : pour les constantes, la variable n'estp as réassigner
+    // - let : pour les variables
+    // "var" pose le problème du "hoisting" qui pose plein d'effets de bords
+    // Plus d'explications : https://developer.mozilla.org/fr/docs/Glossary/Hoisting
     var controller = new ScrollMagic.Controller();
 
 
