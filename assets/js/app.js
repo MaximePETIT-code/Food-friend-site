@@ -19,15 +19,12 @@ if (window.matchMedia("(min-width: 1000px)").matches) {
 }
 
 if (window.matchMedia("(min-width: 1227px)").matches) {
-    window.onresize = function(event)
-    {
-        document.location.reload(true);
-    }
-
-    var controller = new ScrollMagic.Controller();
 
 
-    var scroller = new TimelineMax()
+    const controller = new ScrollMagic.Controller();
+
+
+    const scroller = new TimelineMax()
 
     .to(".scroll", {opacity: 0}, 0)
 
@@ -54,7 +51,7 @@ if (window.matchMedia("(min-width: 1227px)").matches) {
     splitScroll();
 
 
-    var phoneChange1 = new TimelineMax()
+    const phoneChange1 = new TimelineMax()
 
     .to(".phone", {attr:{src: "assets/images/appvisu-commandes.png"}}, 0)
 
@@ -66,7 +63,7 @@ if (window.matchMedia("(min-width: 1227px)").matches) {
     .setTween(phoneChange1)
     .addTo(controller);
 
-    var phoneChange2 = new TimelineMax()
+    const phoneChange2 = new TimelineMax()
 
     .to(".phone", {attr:{src: "assets/images/appvisu-livraison.png"}}, 0)
 
@@ -80,14 +77,14 @@ if (window.matchMedia("(min-width: 1227px)").matches) {
 
 }
 
-var button = document.querySelectorAll('.button-contact');
+const button = document.querySelectorAll('.button-contact');
 
 $(document).on('mousemove touch', function(e){
   magnetize('.button-contact', e);
 });
 
 function magnetize(el, e){
-  var mX = e.pageX,
+  const mX = e.pageX,
       mY = e.pageY;
   const item = $(el);
   
@@ -95,10 +92,10 @@ function magnetize(el, e){
   const centerX = item.offset().left + (item.width()/2);
   const centerY = item.offset().top + (item.height()/2);
   
-  var deltaX = Math.floor((centerX - mX)) * -0.45;
-  var deltaY = Math.floor((centerY - mY)) * -0.45;
+  const deltaX = Math.floor((centerX - mX)) * -0.45;
+  const deltaY = Math.floor((centerY - mY)) * -0.45;
   
-  var distance = calculateDistance(item, mX, mY);
+  const distance = calculateDistance(item, mX, mY);
     
   if(distance < customDist){
     TweenMax.to(item, 0.5, {y: deltaY, x: deltaX, scale:1.1});
